@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <analysis>
    <muterms>
-      <muterm id="bayso-PRO">
-         <prop type="gloss" val="[x]"/>
-         <prop type="lang" val="bayso"/>
-         <prop type="lemma" val="[y]"/>
-         <prop type="mulabel" val="PRO"/>
-      </muterm>
       <muterm id="bayso-PERSSUFF">
          <prop type="gloss" val="[x]"/>
          <prop type="lang" val="bayso"/>
@@ -1000,7 +994,7 @@
       <pdgm pid="ID28fe4ac0-bc98-4780-9e2a-614411f5cdc2">
          <pdgmlabel>aama:pdgmlabel bayso-PIndep</pdgmlabel>
          <common-properties>
-            <prop type="mulabel" val="PRO"/>
+            <prop type="lexlabel" val="PRO"/>
             <prop type="lang" val="Bayso"/>
             <prop type="pos" val="Pronoun"/>
             <prop type="proClass" val="Independent"/>
