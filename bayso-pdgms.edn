@@ -22,6 +22,7 @@
 :morphemes {
   :COPULA {:gloss "[x]", :lemma "[y]", }
   :PERSSUFF {:gloss "[x]", :lemma "[y]", }
+  :PRO {:gloss "[x]", :lemma "[y]", }
 }
 :lexemes {
   :NUMBER {:gloss "[x]", :lemma "[y]", }
@@ -237,28 +238,6 @@
 	    [:Common, :Plural, :Person2, "dubtènte(n)"],
 	    [:Common, :Singular, :Person1, "dubère"],
 	    [:Masc, :Singular, :Person3, "dubère"]]
-    }
-    {:label "aama:pdgmlabel bayso-PIndep"
-    :common {:lexeme :PRO,
-	    :pos :Pronoun,
-	    :proClass :Independent}
-    :terms [[:case, :gender, :number, :person, :token]  ;; schema
-	    [:ObjectIndirect, :Common, :Singular, :Person2, "kuun"],
-	    [:ObjectIndirect, :Common, :Plural, :Person2, "isinun"],
-	    [:Object, :Common, :Singular, :Person1, "in"],
-	    [:Subject, :Common, :Singular, :Person1, "áni"],
-	    [:Subject, :Common, :Plural, :Person1, "no"],
-	    [:Subject, :Common, :Singular, :Person2, "áti"],
-	    [:Subject, :Common, :Plural, :Person3, "ísin"],
-	    [:Subject, :Masc, :Singular, :Person3, "úsu"],
-	    [:ObjectIndirect, :Common, :Singular, :Person1, "iin"],
-	    [:Subject, :Common, :Plural, :Person2, "ísin"],
-	    [:ObjectIndirect, :Fem, :Singular, :Person3, "eseen"],
-	    [:ObjectIndirect, :Common, :Plural, :Person3, "isoon"],
-	    [:ObjectIndirect, :Common, :Plural, :Person1, "noon"],
-	    [:Subject, :Fem, :Singular, :Person3, "èse"],
-	    [:Object, :Common, :Singular, :Person2, "ku"],
-	    [:ObjectIndirect, :Masc, :Singular, :Person3, "usuun"]]
     }
     {:label "aama:pdgmlabel bayso-VConj1NegFutProx2-dub"
     :common {:conjClass :Conjugation1,
@@ -1336,6 +1315,36 @@
 	    [:Common, :Singular, :Person2, "lákko dúbingitta"],
 	    [:Masc, :Singular, :Person3, "lákko dúbingira"]]
     }
+    {:label "aama:pdgmlabel bayso-VAffPastCopula"
+    :common {:lexeme :COPULA,
+	    :polarity :Affirmative,
+	    :pos :Verb,
+	    :tam :Past,
+	    :verbMorphClass :Copula}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Common, :Plural, :Person1, "-ne"],
+	    [:Common, :Singular, :Person2, "-te"],
+	    [:Masc, :Singular, :Person3, "-ye"],
+	    [:Common, :Singular, :Person1, "-ya"],
+	    [:Fem, :Singular, :Person3, "-te"],
+	    [:Common, :Plural, :Person3, "-yen"],
+	    [:Common, :Plural, :Person2, "-ten"]]
+    }
+    {:label "aama:pdgmlabel bayso-VNegPresentCopula"
+    :common {:lexeme :COPULA,
+	    :polarity :Negative,
+	    :pos :Verb,
+	    :tam :Present,
+	    :verbMorphClass :Copula}
+    :terms [[:gender, :number, :person, :token]  ;; schema
+	    [:Masc, :Singular, :Person3, "-yo"],
+	    [:Common, :Plural, :Person2, "-tan"],
+	    [:Common, :Plural, :Person3, "-yan"],
+	    [:Common, :Singular, :Person2, "-to"],
+	    [:Common, :Plural, :Person1, "-no"],
+	    [:Fem, :Singular, :Person3, "-to"],
+	    [:Common, :Singular, :Person1, "-yo"]]
+    }
     {:label "aama:pdgmlabel bayso-VConj3AffFutProx2-dee"
     :common {:conjClass :Conjugation3,
 	    :lexeme :dee,
@@ -1685,6 +1694,28 @@
 	    [:Common, :Singular, :Person1, "lákko segéera"]]
     }}
 :muterms #{
+    {:label "aama:pdgmlabel bayso-PIndep"
+    :common {:morpheme :PRO,
+	    :pos :Pronoun,
+	    :proClass :Independent}
+    :terms [[:case, :gender, :number, :person, :token]  ;; schema
+	    [:ObjectIndirect, :Common, :Singular, :Person2, "kuun"],
+	    [:ObjectIndirect, :Common, :Plural, :Person2, "isinun"],
+	    [:Object, :Common, :Singular, :Person1, "in"],
+	    [:Subject, :Common, :Singular, :Person1, "áni"],
+	    [:Subject, :Common, :Plural, :Person1, "no"],
+	    [:Subject, :Common, :Singular, :Person2, "áti"],
+	    [:Subject, :Common, :Plural, :Person3, "ísin"],
+	    [:Subject, :Masc, :Singular, :Person3, "úsu"],
+	    [:ObjectIndirect, :Common, :Singular, :Person1, "iin"],
+	    [:Subject, :Common, :Plural, :Person2, "ísin"],
+	    [:ObjectIndirect, :Fem, :Singular, :Person3, "eseen"],
+	    [:ObjectIndirect, :Common, :Plural, :Person3, "isoon"],
+	    [:ObjectIndirect, :Common, :Plural, :Person1, "noon"],
+	    [:Subject, :Fem, :Singular, :Person3, "èse"],
+	    [:Object, :Common, :Singular, :Person2, "ku"],
+	    [:ObjectIndirect, :Masc, :Singular, :Person3, "usuun"]]
+    }
     {:label "aama:pdgmlabel bayso-VPersAspSuff"
     :common {:morpheme :PERSSUFF,
 	    :pos :Verb,
@@ -1712,34 +1743,4 @@
 	    [:Common, :Singular, :Person1, "-ya"],
 	    [:Common, :Singular, :Person2, "-ta"],
 	    [:Common, :Plural, :Person1, "-na"]]
-    }
-    {:label "aama:pdgmlabel bayso-VAffPastCopula"
-    :common {:morpheme :COPULA,
-	    :polarity :Affirmative,
-	    :pos :Verb,
-	    :tam :Past,
-	    :verbMorphClass :Copula}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Common, :Plural, :Person1, "-ne"],
-	    [:Common, :Singular, :Person2, "-te"],
-	    [:Masc, :Singular, :Person3, "-ye"],
-	    [:Common, :Singular, :Person1, "-ya"],
-	    [:Fem, :Singular, :Person3, "-te"],
-	    [:Common, :Plural, :Person3, "-yen"],
-	    [:Common, :Plural, :Person2, "-ten"]]
-    }
-    {:label "aama:pdgmlabel bayso-VNegPresentCopula"
-    :common {:morpheme :COPULA,
-	    :polarity :Negative,
-	    :pos :Verb,
-	    :tam :Present,
-	    :verbMorphClass :Copula}
-    :terms [[:gender, :number, :person, :token]  ;; schema
-	    [:Masc, :Singular, :Person3, "-yo"],
-	    [:Common, :Plural, :Person2, "-tan"],
-	    [:Common, :Plural, :Person3, "-yan"],
-	    [:Common, :Singular, :Person2, "-to"],
-	    [:Common, :Plural, :Person1, "-no"],
-	    [:Fem, :Singular, :Person3, "-to"],
-	    [:Common, :Singular, :Person1, "-yo"]]
     }}
