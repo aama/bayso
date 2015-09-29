@@ -1,6 +1,9 @@
 {
 :lang :bayso
 :sgpref "bay"
+:datasource "Hayward1978 Hayward1979"
+:geodemoURL "http://www.ethnologue.com/language/"
+:geodemoTXT "Representing the northern branch of the Omo-Tana language sub-family, Bayso is spoken in villages in the vicinity of, and islands in Lake Abaya."
 :schemata {
 :case [:Object, :ObjectIndirect, :Subject]
 	  :conjSubClass [:Conjugation1, :Conjugation2, :Conjugation3, :Conjugation4]
@@ -36,7 +39,7 @@
   :seg {:conjSubClass :Conjugation2, :gloss "_NULL", :lemma "seg", :pos :Verb}
 }
 :lxterms #{
-    {:label "aama:pdgmlabel bayso-VConj2NegImperfPres-seg"
+    {:label "bayso-VConj2NegImperfPres-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Negative,
@@ -51,7 +54,7 @@
 	    [:Masc, :Singular, :Person3, "lákko segáagira"],
 	    [:Common, :Plural, :Person2, "lákko segáagittan"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2NegDubPast-seg"
+    {:label "bayso-VConj2NegDubPast-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Negative,
@@ -66,7 +69,7 @@
 	    [:Common, :Singular, :Person2, "lákko segigitta"],
 	    [:Fem, :Singular, :Person3, "lákko segíigitta"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1AffPerfSimple-dub"
+    {:label "bayso-VConj1AffPerfSimple-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Affirmative,
@@ -81,7 +84,7 @@
 	    [:Common, :Plural, :Person2, "dubtèn"],
 	    [:Fem, :Singular, :Person3, "dubtè"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4NegImperfSimple-kor"
+    {:label "bayso-VConj4NegImperfSimple-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Negative,
@@ -96,7 +99,7 @@
 	    [:Fem, :Singular, :Person3, "lákko korattá"],
 	    [:Common, :Plural, :Person3, "lákko koratán"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2NegImperfSimple-seg"
+    {:label "bayso-VConj2NegImperfSimple-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Negative,
@@ -111,7 +114,7 @@
 	    [:Common, :Plural, :Person2, "lákko korattán"],
 	    [:Common, :Plural, :Person3, "lákko koratán"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3NegImperfPast-dee"
+    {:label "bayso-VConj3NegImperfPast-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Negative,
@@ -126,7 +129,7 @@
 	    [:Common, :Singular, :Person1, "lákko díinare"],
 	    [:Common, :Plural, :Person2, "lákko díinatten"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4NegImprtv-kor"
+    {:label "bayso-VConj4NegImprtv-kor"
     :common {:conjSubClass :Conjugation4,
 	    :gender :Common,
 	    :lexeme :kor,
@@ -138,7 +141,7 @@
 	    [:Singular, "aro´ koratté"],
 	    [:Plural, "aro´ korattén"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2AffImperfSimple-seg"
+    {:label "bayso-VConj2AffImperfSimple-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Affirmative,
@@ -153,7 +156,7 @@
 	    [:Fem, :Singular, :Person3, "korattá"],
 	    [:Common, :Plural, :Person1, "koranná"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2AffFut3-seg"
+    {:label "bayso-VConj2AffFut3-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Affirmative,
@@ -168,7 +171,7 @@
 	    [:Common, :Plural, :Person1, "segíinanna"],
 	    [:Common, :Singular, :Person1, "segíinara"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4AffJussive-kor"
+    {:label "bayso-VConj4AffJussive-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :person :Person3,
@@ -180,7 +183,7 @@
 	    [:Common, :Plural, "há korate(e)n"],
 	    [:Masc, :Singular, "há koratu"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4AffFut3-kor"
+    {:label "bayso-VConj4AffFut3-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Affirmative,
@@ -195,7 +198,7 @@
 	    [:Common, :Plural, :Person2, "koráinattan"],
 	    [:Common, :Plural, :Person3, "koráinaran"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4NegFut1-kor"
+    {:label "bayso-VConj4NegFut1-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Negative,
@@ -210,7 +213,7 @@
 	    [:Fem, :Singular, :Person3, "lákko korátto"],
 	    [:Common, :Plural, :Person1, "lákko koránno"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2AffFut2-seg"
+    {:label "bayso-VConj2AffFut2-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Affirmative,
@@ -225,7 +228,7 @@
 	    [:Masc, :Singular, :Person3, "segiiro´wa"],
 	    [:Common, :Singular, :Person1, "seiiro´wa"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1AffPerfPast-dub"
+    {:label "bayso-VConj1AffPerfPast-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Affirmative,
@@ -240,7 +243,7 @@
 	    [:Common, :Singular, :Person1, "dubère"],
 	    [:Masc, :Singular, :Person3, "dubère"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1NegFutProx2-dub"
+    {:label "bayso-VConj1NegFutProx2-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Negative,
@@ -255,7 +258,7 @@
 	    [:Common, :Singular, :Person2, "lákko dúbinatto"],
 	    [:Common, :Plural, :Person2, "lákko dúbinatten"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3NegDubPast-dee"
+    {:label "bayso-VConj3NegDubPast-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Negative,
@@ -270,7 +273,7 @@
 	    [:Common, :Singular, :Person2, "lákko díigitta"],
 	    [:Common, :Plural, :Person2, "lákko díigittan"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1NegPerfSimple-dub"
+    {:label "bayso-VConj1NegPerfSimple-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Negative,
@@ -285,7 +288,7 @@
 	    [:Common, :Singular, :Person2, "lákko dubté"],
 	    [:Common, :Plural, :Person2, "lákko dubtén"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2AffImperfPast-seg"
+    {:label "bayso-VConj2AffImperfPast-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Affirmative,
@@ -300,7 +303,7 @@
 	    [:Common, :Plural, :Person3, "segíinaren"],
 	    [:Common, :Singular, :Person1, "segíinare"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2NegFutProx2-seg"
+    {:label "bayso-VConj2NegFutProx2-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Negative,
@@ -315,7 +318,7 @@
 	    [:Common, :Singular, :Person1, "lákko segíinaro"],
 	    [:Fem, :Singular, :Person3, "lákko segíinatto"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4AffFut1-kor"
+    {:label "bayso-VConj4AffFut1-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Affirmative,
@@ -330,7 +333,7 @@
 	    [:Masc, :Singular, :Person3, "koráro"],
 	    [:Common, :Plural, :Person2, "koráttan"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3NegPerfComp1-dee"
+    {:label "bayso-VConj3NegPerfComp1-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Negative,
@@ -345,7 +348,7 @@
 	    [:Masc, :Singular, :Person3, "lákko déera"],
 	    [:Common, :Singular, :Person2, "lákko deetétta"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4NegDubPast-kor"
+    {:label "bayso-VConj4NegDubPast-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Negative,
@@ -360,7 +363,7 @@
 	    [:Common, :Singular, :Person1, "lákko koráigira"],
 	    [:Fem, :Singular, :Person3, "lákko koráigitta"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2AffFutProx2-seg"
+    {:label "bayso-VConj2AffFutProx2-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Affirmative,
@@ -375,7 +378,7 @@
 	    [:Common, :Plural, :Person3, "segíinaran"],
 	    [:Common, :Plural, :Person2, "segíinattan"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3AffPerfComp1-dee"
+    {:label "bayso-VConj3AffPerfComp1-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Affirmative,
@@ -390,7 +393,7 @@
 	    [:Common, :Singular, :Person2, "deetétta"],
 	    [:Masc, :Singular, :Person3, "déera"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1NegImperfPres-dub"
+    {:label "bayso-VConj1NegImperfPres-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Negative,
@@ -405,7 +408,7 @@
 	    [:Common, :Singular, :Person1, "lákko dubáagira"],
 	    [:Fem, :Singular, :Person3, "lákko dubáagitta"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4NegImperfPast-kor"
+    {:label "bayso-VConj4NegImperfPast-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Negative,
@@ -420,7 +423,7 @@
 	    [:Common, :Singular, :Person1, "lákko koráinare"],
 	    [:Masc, :Singular, :Person3, "lákko koráinare"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3AffFut3-dee"
+    {:label "bayso-VConj3AffFut3-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Affirmative,
@@ -435,7 +438,7 @@
 	    [:Masc, :Singular, :Person3, "díinara"],
 	    [:Common, :Plural, :Person1, "díinanna"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3AffImprtv-dee"
+    {:label "bayso-VConj3AffImprtv-dee"
     :common {:conjSubClass :Conjugation3,
 	    :gender :Common,
 	    :lexeme :dee,
@@ -447,7 +450,7 @@
 	    [:Plural, "diá"],
 	    [:Singular, "déen"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4AffPerfComp1-kor"
+    {:label "bayso-VConj4AffPerfComp1-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Affirmative,
@@ -462,7 +465,7 @@
 	    [:Common, :Singular, :Person1, "koraéra"],
 	    [:Masc, :Singular, :Person3, "koratéra"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1NegImprtv-dub"
+    {:label "bayso-VConj1NegImprtv-dub"
     :common {:conjSubClass :Conjugation1,
 	    :gender :Common,
 	    :lexeme :dub,
@@ -474,7 +477,7 @@
 	    [:Plural, "aro´ dubtén"],
 	    [:Singular, "aro´ dubté"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2NegFut1-seg"
+    {:label "bayso-VConj2NegFut1-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Negative,
@@ -489,7 +492,7 @@
 	    [:Common, :Singular, :Person1, "lákko segíiro"],
 	    [:Common, :Plural, :Person3, "lákko segíiran"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1NegJussive-dub"
+    {:label "bayso-VConj1NegJussive-dub"
     :common {:conjSubClass :Conjugation1,
 	    :gender :Common,
 	    :lexeme :dub,
@@ -500,7 +503,7 @@
     :terms [[:token]  ;; schema
 	    ["aro´ dubo´"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4AffFutProx1-kor"
+    {:label "bayso-VConj4AffFutProx1-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Affirmative,
@@ -515,7 +518,7 @@
 	    [:Common, :Singular, :Person2, "koráingitta"],
 	    [:Common, :Singular, :Person1, "koráingira"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1AffImperfSimple-dub"
+    {:label "bayso-VConj1AffImperfSimple-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Affirmative,
@@ -530,7 +533,7 @@
 	    [:Masc, :Singular, :Person3, "dubá"],
 	    [:Common, :Plural, :Person3, "dubán"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2AffImprtv-seg"
+    {:label "bayso-VConj2AffImprtv-seg"
     :common {:conjSubClass :Conjugation2,
 	    :gender :Common,
 	    :lexeme :seg,
@@ -542,7 +545,7 @@
 	    [:Singular, "segíin"],
 	    [:Plural, "segáa"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2AffPerfSimple-seg"
+    {:label "bayso-VConj2AffPerfSimple-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Affirmative,
@@ -557,7 +560,7 @@
 	    [:Common, :Plural, :Person2, "segiitén"],
 	    [:Common, :Singular, :Person2, "segiité"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2AffPerfComp2-seg"
+    {:label "bayso-VConj2AffPerfComp2-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Affirmative,
@@ -572,7 +575,7 @@
 	    [:Common, :Singular, :Person2, "segiitéwa"],
 	    [:Common, :Plural, :Person1, "segiinéwa"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3NegImperfPres-dee"
+    {:label "bayso-VConj3NegImperfPres-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Negative,
@@ -587,7 +590,7 @@
 	    [:Common, :Plural, :Person2, "lákko diáagittan"],
 	    [:Fem, :Singular, :Person3, "lákko diáagitta"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2AffImperfComp-seg"
+    {:label "bayso-VConj2AffImperfComp-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Affirmative,
@@ -602,7 +605,7 @@
 	    [:Common, :Plural, :Person1, "segáanna"],
 	    [:Common, :Singular, :Person1, "segáara"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2NegPerfSimple-seg"
+    {:label "bayso-VConj2NegPerfSimple-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Negative,
@@ -617,7 +620,7 @@
 	    [:Masc, :Singular, :Person3, "lákko sege"],
 	    [:Common, :Plural, :Person2, "lákko segiitén"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1AffImprtv-dub"
+    {:label "bayso-VConj1AffImprtv-dub"
     :common {:conjSubClass :Conjugation1,
 	    :gender :Common,
 	    :lexeme :dub,
@@ -629,7 +632,7 @@
 	    [:Singular, "dubín"],
 	    [:Plural, "dubá"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4NegFutProx1-kor"
+    {:label "bayso-VConj4NegFutProx1-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Negative,
@@ -644,7 +647,7 @@
 	    [:Common, :Singular, :Person2, "lákko koráingitta"],
 	    [:Common, :Plural, :Person3, "lákko koráingiran"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1AffFut3-dub"
+    {:label "bayso-VConj1AffFut3-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Affirmative,
@@ -659,7 +662,7 @@
 	    [:Common, :Plural, :Person2, "dúbinattan"],
 	    [:Common, :Plural, :Person3, "dúbinaran"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3AffPerfPast-dee"
+    {:label "bayso-VConj3AffPerfPast-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Affirmative,
@@ -674,7 +677,7 @@
 	    [:Common, :Plural, :Person2, "deeténte(n)"],
 	    [:Fem, :Singular, :Person3, "deetétte"]]
     }
-    {:label "aama:pdgmlabel bayso-PPoss"
+    {:label "bayso-PPoss"
     :common {:lexeme :PRO,
 	    :pos :Pronoun,
 	    :proClass :Possessive}
@@ -701,7 +704,7 @@
 	    [:Common, :P_Common, :P_Plural, :Singular, :Person1, "o tee"],
 	    [:Common, :P_Masc, :P_Singular, :Singular, :Person1, "ka kee"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2NegImprtv-seg"
+    {:label "bayso-VConj2NegImprtv-seg"
     :common {:conjSubClass :Conjugation2,
 	    :gender :Common,
 	    :lexeme :seg,
@@ -713,7 +716,7 @@
 	    [:Plural, "aro´ segiitén"],
 	    [:Singular, "aro´ segiité"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3AffPerfComp2-dee"
+    {:label "bayso-VConj3AffPerfComp2-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Affirmative,
@@ -728,7 +731,7 @@
 	    [:Common, :Singular, :Person2, "deetéwa"],
 	    [:Fem, :Singular, :Person3, "deetéwa"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4AffPerfSimple-kor"
+    {:label "bayso-VConj4AffPerfSimple-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Affirmative,
@@ -743,7 +746,7 @@
 	    [:Common, :Plural, :Person1, "koranné"],
 	    [:Fem, :Singular, :Person3, "koratté"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4NegJussive-kor"
+    {:label "bayso-VConj4NegJussive-kor"
     :common {:conjSubClass :Conjugation4,
 	    :gender :Common,
 	    :lexeme :kor,
@@ -754,7 +757,7 @@
     :terms [[:token]  ;; schema
 	    ["aro´ koranno´"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4AffImprtv-kor"
+    {:label "bayso-VConj4AffImprtv-kor"
     :common {:conjSubClass :Conjugation4,
 	    :gender :Common,
 	    :lexeme :kor,
@@ -766,7 +769,7 @@
 	    [:Plural, "koráen"],
 	    [:Singular, "ko´ra"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4AffImperfPres-kor"
+    {:label "bayso-VConj4AffImperfPres-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Affirmative,
@@ -781,7 +784,7 @@
 	    [:Common, :Plural, :Person2, "koratáagittan"],
 	    [:Common, :Plural, :Person1, "koratáaginna"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1NegFut1-dub"
+    {:label "bayso-VConj1NegFut1-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Negative,
@@ -796,7 +799,7 @@
 	    [:Common, :Singular, :Person2, "lákko dubto´"],
 	    [:Masc, :Singular, :Person3, "lákko dubiro´"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4AffFut2-kor"
+    {:label "bayso-VConj4AffFut2-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Affirmative,
@@ -811,7 +814,7 @@
 	    [:Common, :Plural, :Person3, "koratánwa"],
 	    [:Common, :Plural, :Person2, "korattánwa"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3AffFut1-dee"
+    {:label "bayso-VConj3AffFut1-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Affirmative,
@@ -826,7 +829,7 @@
 	    [:Common, :Plural, :Person1, "deeno´"],
 	    [:Common, :Plural, :Person3, "deerán"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2AffFut1-seg"
+    {:label "bayso-VConj2AffFut1-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Affirmative,
@@ -841,7 +844,7 @@
 	    [:Common, :Singular, :Person2, "segíito"],
 	    [:Common, :Plural, :Person2, "segíittan"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1AffDubPast-dub"
+    {:label "bayso-VConj1AffDubPast-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Affirmative,
@@ -856,7 +859,7 @@
 	    [:Common, :Plural, :Person2, "dúbigittan"],
 	    [:Masc, :Singular, :Person3, "dúbigira"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2AffDubPast-seg"
+    {:label "bayso-VConj2AffDubPast-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Affirmative,
@@ -871,7 +874,7 @@
 	    [:Common, :Singular, :Person1, "segíigira"],
 	    [:Common, :Plural, :Person2, "segíigittan"]]
     }
-    {:label "aama:pdgmlabel bayso-VStems"
+    {:label "bayso-VStems"
     :common {:lexeme :dub,
 	    :pos :Verb,
 	    :formType :Stem,
@@ -882,7 +885,7 @@
 	    [:Past, :Imperfect, "dubin-"],
 	    [:Future, :Proximal, "dubin-"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3NegFutProx2-dee"
+    {:label "bayso-VConj3NegFutProx2-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Negative,
@@ -897,7 +900,7 @@
 	    [:Masc, :Singular, :Person3, "lákko díianaro"],
 	    [:Fem, :Singular, :Person3, "lákko díianatto"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3NegPerfPast-dee"
+    {:label "bayso-VConj3NegPerfPast-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Negative,
@@ -912,7 +915,7 @@
 	    [:Masc, :Singular, :Person3, "lákko déere"],
 	    [:Common, :Plural, :Person2, "lákko deeténte(n)"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4NegPerfSimple-kor"
+    {:label "bayso-VConj4NegPerfSimple-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Negative,
@@ -927,7 +930,7 @@
 	    [:Fem, :Singular, :Person3, "lákko koratté"],
 	    [:Common, :Plural, :Person1, "lákko koranné"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1NegPerfPast-dub"
+    {:label "bayso-VConj1NegPerfPast-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Negative,
@@ -942,7 +945,7 @@
 	    [:Common, :Plural, :Person1, "lákko dubnénne"],
 	    [:Common, :Singular, :Person1, "lákko dubére"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2NegImperfPast-seg"
+    {:label "bayso-VConj2NegImperfPast-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Negative,
@@ -957,7 +960,7 @@
 	    [:Common, :Plural, :Person2, "lákko segíinatten"],
 	    [:Common, :Plural, :Person1, "lákko segíinanne"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1AffFut1-dub"
+    {:label "bayso-VConj1AffFut1-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Affirmative,
@@ -972,7 +975,7 @@
 	    [:Common, :Singular, :Person2, "dubto´"],
 	    [:Common, :Singular, :Person1, "dubiro´"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1AffPerfComp2-dub"
+    {:label "bayso-VConj1AffPerfComp2-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Affirmative,
@@ -987,7 +990,7 @@
 	    [:Common, :Plural, :Person1, "dubnèwa"],
 	    [:Common, :Singular, :Person1, "dubèwa"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2AffPerfPast-seg"
+    {:label "bayso-VConj2AffPerfPast-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Affirmative,
@@ -1002,7 +1005,7 @@
 	    [:Common, :Singular, :Person2, "segiitétte"],
 	    [:Common, :Plural, :Person3, "segéenre(n) / segéeren"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3NegFutProx1-dee"
+    {:label "bayso-VConj3NegFutProx1-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Negative,
@@ -1017,7 +1020,7 @@
 	    [:Common, :Plural, :Person1, "lákko díinginna"],
 	    [:Common, :Singular, :Person2, "lákko díingitta"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3AffImperfPast-dee"
+    {:label "bayso-VConj3AffImperfPast-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Affirmative,
@@ -1032,7 +1035,7 @@
 	    [:Common, :Singular, :Person1, "díinare"],
 	    [:Common, :Plural, :Person1, "díinanne"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2AffJussive-seg"
+    {:label "bayso-VConj2AffJussive-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :person :Person3,
@@ -1044,7 +1047,7 @@
 	    [:Common, :Plural, "há sege(e)n"],
 	    [:Fem, :Singular, "há segiitu"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4NegFutProx2-kor"
+    {:label "bayso-VConj4NegFutProx2-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Negative,
@@ -1059,7 +1062,7 @@
 	    [:Common, :Plural, :Person3, "lákko koráinaran"],
 	    [:Common, :Plural, :Person2, "lákko koráinattan"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4AffPerfComp2-kor"
+    {:label "bayso-VConj4AffPerfComp2-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Affirmative,
@@ -1074,7 +1077,7 @@
 	    [:Common, :Plural, :Person2, "koratténwa"],
 	    [:Masc, :Singular, :Person3, "koratéwa"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4NegImperfPres-kor"
+    {:label "bayso-VConj4NegImperfPres-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Negative,
@@ -1089,7 +1092,7 @@
 	    [:Common, :Plural, :Person1, "lákko koratáaginna"],
 	    [:Fem, :Singular, :Person3, "lákko koratáagitta"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4AffImperfSimple-kor"
+    {:label "bayso-VConj4AffImperfSimple-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Affirmative,
@@ -1104,7 +1107,7 @@
 	    [:Fem, :Singular, :Person3, "korattá"],
 	    [:Common, :Plural, :Person1, "koranná"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1AffImperfPast-dub"
+    {:label "bayso-VConj1AffImperfPast-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Affirmative,
@@ -1119,7 +1122,7 @@
 	    [:Fem, :Singular, :Person3, "dúbinatte"],
 	    [:Common, :Singular, :Person2, "dúbinatte"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3NegPerfSimple-dee"
+    {:label "bayso-VConj3NegPerfSimple-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Negative,
@@ -1134,7 +1137,7 @@
 	    [:Common, :Singular, :Person2, "lákko deeté"],
 	    [:Common, :Singular, :Person1, "lákko dée"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1NegImperfSimple-dub"
+    {:label "bayso-VConj1NegImperfSimple-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Negative,
@@ -1149,7 +1152,7 @@
 	    [:Masc, :Singular, :Person3, "lákko dubá"],
 	    [:Common, :Singular, :Person2, "lákko dubtá"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1NegImperfGen-dub"
+    {:label "bayso-VConj1NegImperfGen-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Negative,
@@ -1164,7 +1167,7 @@
 	    [:Common, :Singular, :Person2, "lákko dubátto"],
 	    [:Common, :Plural, :Person1, "lákko dubánno"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1AffImperfComp-dub"
+    {:label "bayso-VConj1AffImperfComp-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Affirmative,
@@ -1179,7 +1182,7 @@
 	    [:Common, :Singular, :Person2, "dubátta"],
 	    [:Common, :Plural, :Person1, "dubánna"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1NegImperfPast-dub"
+    {:label "bayso-VConj1NegImperfPast-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Negative,
@@ -1194,7 +1197,7 @@
 	    [:Fem, :Singular, :Person3, "lákko dúbinatte"],
 	    [:Masc, :Singular, :Person3, "lákko dúbinare"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2AffPerfComp1-seg"
+    {:label "bayso-VConj2AffPerfComp1-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Affirmative,
@@ -1209,7 +1212,7 @@
 	    [:Common, :Plural, :Person1, "segiinénna"],
 	    [:Common, :Singular, :Person1, "segéera"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1NegPerfComp1-dub"
+    {:label "bayso-VConj1NegPerfComp1-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Negative,
@@ -1224,7 +1227,7 @@
 	    [:Common, :Singular, :Person2, "lákko dubtétta"],
 	    [:Common, :Plural, :Person1, "lákko dubnénna"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1AffFutProx2-dub"
+    {:label "bayso-VConj1AffFutProx2-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Affirmative,
@@ -1239,7 +1242,7 @@
 	    [:Fem, :Singular, :Person3, "dúbinatto"],
 	    [:Common, :Singular, :Person2, "dúbinatto"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2AffFutProx1-seg"
+    {:label "bayso-VConj2AffFutProx1-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Affirmative,
@@ -1254,7 +1257,7 @@
 	    [:Fem, :Singular, :Person3, "segíingitta"],
 	    [:Masc, :Singular, :Person3, "segíingira"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2AffImperfPres-seg"
+    {:label "bayso-VConj2AffImperfPres-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Affirmative,
@@ -1269,7 +1272,7 @@
 	    [:Masc, :Singular, :Person3, "segáagira"],
 	    [:Common, :Singular, :Person1, "segáagira"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4NegPerfComp1-kor"
+    {:label "bayso-VConj4NegPerfComp1-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Negative,
@@ -1284,7 +1287,7 @@
 	    [:Fem, :Singular, :Person3, "lákko korattétta"],
 	    [:Common, :Plural, :Person2, "lákko korattnta / lá korattéttan"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3AffImperfComp-dee"
+    {:label "bayso-VConj3AffImperfComp-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Affirmative,
@@ -1299,7 +1302,7 @@
 	    [:Common, :Plural, :Person3, "dáaran"],
 	    [:Common, :Singular, :Person2, "dáatta"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1NegFutProx1-dub"
+    {:label "bayso-VConj1NegFutProx1-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Negative,
@@ -1314,7 +1317,7 @@
 	    [:Common, :Singular, :Person2, "lákko dúbingitta"],
 	    [:Masc, :Singular, :Person3, "lákko dúbingira"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3AffFutProx2-dee"
+    {:label "bayso-VConj3AffFutProx2-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Affirmative,
@@ -1329,7 +1332,7 @@
 	    [:Common, :Plural, :Person2, "díianattan"],
 	    [:Common, :Singular, :Person2, "díinatto"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3AffPerfSimple-dee"
+    {:label "bayso-VConj3AffPerfSimple-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Affirmative,
@@ -1344,7 +1347,7 @@
 	    [:Fem, :Singular, :Person3, "deeté"],
 	    [:Common, :Singular, :Person2, "deeté"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4NegPerfPast-kor"
+    {:label "bayso-VConj4NegPerfPast-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Negative,
@@ -1359,7 +1362,7 @@
 	    [:Masc, :Singular, :Person3, "lákko koratére"],
 	    [:Common, :Plural, :Person2, "lákko koratténte(n)"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4AffImperfPast-kor"
+    {:label "bayso-VConj4AffImperfPast-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Affirmative,
@@ -1374,7 +1377,7 @@
 	    [:Common, :Singular, :Person2, "koráinatte"],
 	    [:Masc, :Singular, :Person3, "koráinare"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1AffFut2-dub"
+    {:label "bayso-VConj1AffFut2-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Affirmative,
@@ -1389,7 +1392,7 @@
 	    [:Masc, :Singular, :Person3, "dubiro´wa"],
 	    [:Common, :Singular, :Person1, "dubiro´wa"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2NegPerfPast-seg"
+    {:label "bayso-VConj2NegPerfPast-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Negative,
@@ -1404,7 +1407,7 @@
 	    [:Common, :Singular, :Person1, "lákko segéere"],
 	    [:Common, :Plural, :Person2, "lákko segiiténte(n)"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2NegJussive-seg"
+    {:label "bayso-VConj2NegJussive-seg"
     :common {:conjSubClass :Conjugation2,
 	    :gender :Common,
 	    :lexeme :seg,
@@ -1415,7 +1418,7 @@
     :terms [[:token]  ;; schema
 	    ["aro´ sego´o"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2NegFutProx1-seg"
+    {:label "bayso-VConj2NegFutProx1-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Negative,
@@ -1430,7 +1433,7 @@
 	    [:Common, :Singular, :Person1, "lákko segíingira"],
 	    [:Masc, :Singular, :Person3, "lákko segíingira"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1NegDubPast-dub"
+    {:label "bayso-VConj1NegDubPast-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Negative,
@@ -1445,7 +1448,7 @@
 	    [:Common, :Singular, :Person1, "lákko dúbigira"],
 	    [:Common, :Singular, :Person2, "lákko dúbigitta"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1AffImperfPres-dub"
+    {:label "bayso-VConj1AffImperfPres-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Affirmative,
@@ -1460,7 +1463,7 @@
 	    [:Common, :Plural, :Person3, "dubáagiran"],
 	    [:Common, :Plural, :Person1, "dubáaginna"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1AffJussive-dub"
+    {:label "bayso-VConj1AffJussive-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :person :Person3,
@@ -1472,7 +1475,7 @@
 	    [:Fem, :Singular, "há dubtu"],
 	    [:Masc, :Singular, "há dubn"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3NegFut1-dee"
+    {:label "bayso-VConj3NegFut1-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Negative,
@@ -1487,7 +1490,7 @@
 	    [:Common, :Plural, :Person2, "lákko deetán"],
 	    [:Masc, :Singular, :Person3, "lákko deero´"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1AffFutProx1-dub"
+    {:label "bayso-VConj1AffFutProx1-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Affirmative,
@@ -1502,7 +1505,7 @@
 	    [:Masc, :Singular, :Person3, "dúbingira"],
 	    [:Common, :Singular, :Person2, "dúbingitta"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4AffPerfPast-kor"
+    {:label "bayso-VConj4AffPerfPast-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Affirmative,
@@ -1517,7 +1520,7 @@
 	    [:Masc, :Singular, :Person3, "koratére"],
 	    [:Fem, :Singular, :Person3, "korattétte"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3NegImprtv-dee"
+    {:label "bayso-VConj3NegImprtv-dee"
     :common {:conjSubClass :Conjugation3,
 	    :gender :Common,
 	    :lexeme :dee,
@@ -1529,7 +1532,7 @@
 	    [:Plural, "aro´ deetén"],
 	    [:Singular, "aro´ deeté"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4AffFutProx2-kor"
+    {:label "bayso-VConj4AffFutProx2-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Affirmative,
@@ -1544,7 +1547,7 @@
 	    [:Common, :Plural, :Person1, "koráinanno"],
 	    [:Common, :Singular, :Person2, "koráinatto"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj1AffPerfComp1-dub"
+    {:label "bayso-VConj1AffPerfComp1-dub"
     :common {:conjSubClass :Conjugation1,
 	    :lexeme :dub,
 	    :polarity :Affirmative,
@@ -1559,7 +1562,7 @@
 	    [:Common, :Singular, :Person1, "dubèra"],
 	    [:Fem, :Singular, :Person3, "dubtètta"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj4AffDubPast-kor"
+    {:label "bayso-VConj4AffDubPast-kor"
     :common {:conjSubClass :Conjugation4,
 	    :lexeme :kor,
 	    :polarity :Affirmative,
@@ -1574,7 +1577,7 @@
 	    [:Common, :Singular, :Person2, "koráigitta"],
 	    [:Common, :Plural, :Person1, "koráiginna"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3AffDubPast-dee"
+    {:label "bayso-VConj3AffDubPast-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Affirmative,
@@ -1589,7 +1592,7 @@
 	    [:Common, :Plural, :Person2, "díigittan"],
 	    [:Common, :Plural, :Person1, "díiginna"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3AffFut2-dee"
+    {:label "bayso-VConj3AffFut2-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Affirmative,
@@ -1604,7 +1607,7 @@
 	    [:Common, :Plural, :Person1, "deenno´wa"],
 	    [:Common, :Plural, :Person3, "deeránwa"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3AffJussive-dee"
+    {:label "bayso-VConj3AffJussive-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :person :Person3,
@@ -1616,7 +1619,7 @@
 	    [:Common, :Plural, "há de(e)n"],
 	    [:Masc, :Singular, "há deu"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3AffImperfPres-dee"
+    {:label "bayso-VConj3AffImperfPres-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Affirmative,
@@ -1631,7 +1634,7 @@
 	    [:Masc, :Singular, :Person3, "diáagira"],
 	    [:Common, :Plural, :Person2, "diáagittan"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj3AffFutProx1-dee"
+    {:label "bayso-VConj3AffFutProx1-dee"
     :common {:conjSubClass :Conjugation3,
 	    :lexeme :dee,
 	    :polarity :Affirmative,
@@ -1646,7 +1649,7 @@
 	    [:Common, :Singular, :Person2, "díingitta"],
 	    [:Masc, :Singular, :Person3, "díingira"]]
     }
-    {:label "aama:pdgmlabel bayso-VConj2NegPerfComp1-seg"
+    {:label "bayso-VConj2NegPerfComp1-seg"
     :common {:conjSubClass :Conjugation2,
 	    :lexeme :seg,
 	    :polarity :Negative,
@@ -1662,7 +1665,7 @@
 	    [:Common, :Singular, :Person1, "lákko segéera"]]
     }}
 :muterms #{
-    {:label "aama:pdgmlabel bayso-PIndep"
+    {:label "bayso-PIndep"
     :common {:morpheme :PRO,
 	    :pos :Pronoun,
 	    :proClass :Independent}
@@ -1684,7 +1687,7 @@
 	    [:Object, :Common, :Singular, :Person2, "ku"],
 	    [:ObjectIndirect, :Masc, :Singular, :Person3, "usuun"]]
     }
-    {:label "aama:pdgmlabel bayso-VPersAspSuff"
+    {:label "bayso-VPersAspSuff"
     :common {:morpheme :PERSSUFF,
 	    :pos :Verb,
 	    :morphClass :PersSuff}
@@ -1697,7 +1700,7 @@
 	    [:Common, :Plural, :Person2, "-tVn"],
 	    [:Common, :Singular, :Person2, "-tV"]]
     }
-    {:label "aama:pdgmlabel bayso-VAffPresentCopula"
+    {:label "bayso-VAffPresentCopula"
     :common {:morpheme :COPULA,
 	    :polarity :Affirmative,
 	    :pos :Verb,
@@ -1712,7 +1715,7 @@
 	    [:Common, :Singular, :Person2, "-ta"],
 	    [:Common, :Plural, :Person1, "-na"]]
     }
-    {:label "aama:pdgmlabel bayso-VAffPastCopula"
+    {:label "bayso-VAffPastCopula"
     :common {:morpheme :COPULA,
 	    :polarity :Affirmative,
 	    :pos :Verb,
@@ -1727,7 +1730,7 @@
 	    [:Common, :Plural, :Person3, "-yen"],
 	    [:Common, :Plural, :Person2, "-ten"]]
     }
-    {:label "aama:pdgmlabel bayso-VNegPresentCopula"
+    {:label "bayso-VNegPresentCopula"
     :common {:morpheme :COPULA,
 	    :polarity :Negative,
 	    :pos :Verb,
