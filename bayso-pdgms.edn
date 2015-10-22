@@ -2,7 +2,7 @@
 :lang :bayso
 :sgpref "bay"
 :datasource "Hayward1978 Hayward1979"
-:geodemoURL "http://www.ethnologue.com/language/"
+:geodemoURL "http://www.ethnologue.com/language/bsw"
 :geodemoTXT "Representing the northern branch of the Omo-Tana language sub-family, Bayso is spoken in villages in the vicinity of, and islands in Lake Abaya."
 :schemata {
 :case [:Object, :ObjectIndirect, :Subject]
@@ -32,7 +32,7 @@
   :PERSSUFF {:gloss "[x]", :lemma "[y]", }
   :PRO {:gloss "[x]", :lemma "[y]", }
 }
-:lexemes {
+ :lexemes {
   :dee {:conjSubClass :Conjugation3, :gloss "_NULL", :lemma "dee", :pos :Verb}
   :dub {:conjSubClass :Conjugation1, :gloss "_NULL", :lemma "dub", :pos :Verb}
   :kor {:conjSubClass :Conjugation4, :gloss "_NULL", :lemma "kor", :pos :Verb}
