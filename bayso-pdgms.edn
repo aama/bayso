@@ -1,1865 +1,1976 @@
 {
 :lang :bayso
-:sgpref "bay"
 :subfamily "Lowland East Cushitic Omo-Tana"
+:sgpref "bay"
 :datasource "Hayward1978 Hayward1979"
-:datasourceNote "Note that all verbs are Suffix conjugation, except for the very marginal case of the encliticized Copula."
+:datasourceNotes "Note that all verbs are Suffix conjugation, except for the very marginal case of the encliticized Copula."
 :geodemoURL "http://www.ethnologue.com/language/bsw"
 :geodemoTXT "Representing the northern branch of the Omo-Tana language sub-family, Bayso is spoken in villages in the vicinity of, and islands in Lake Abaya."
-:schemata {
-:case [:Object, :ObjectIndirect, :Subject]
-           :conjClass [:Prefix, :Suffix]
-	  :conjSubClass [:Conjugation1, :Conjugation2, :Conjugation3, :Conjugation4]
-	  :derivedStemAug [:Autobenefactivization, :Comb-Extension, :Inchoativization, :M-Extension, :Reduplication, :Reflexivization, :T-Extension, :Transitivization, :at_sat-Extension]
-	  :formType [:Stem]
-	  :gender [:Common, :Fem, :Masc]
-	  :genderPoss [:P_Common, :P_Fem, :P_Masc]
-	  :morphClass [:Copula, :PersSuff, :TnsAspModStem]
-	  :numPoss [:P_Plural, :P_Singular]
-	  :number [:Plural, :Singular]
-	  :person [:Neutral, :Person1, :Person2, :Person3]
-	  :polarity [:Affirmative, :Negative]
-	  :pos [:Pronoun, :Verb]
-	  :proClass [:Independent, :Possessive]
-	  :tam [:DubitativePast, :Future, :Future1, :Future2, :Future3, :FutureProximate1, :FutureProximate2, :Imperative, :ImperativeJussive, :ImperfectComp, :ImperfectGeneral, :ImperfectPast, :ImperfectPresent, :ImperfectSimple, :Jussive, :Non-past, :Past, :PerfectComp1, :PerfectComp2, :PerfectSimple, :PrefectPast, :Present]
-	  :tamStemForm [:Dubitative, :Imperfect, :Proximal]
-	  }
-:pclass {
-           :pngClass [:person :number :gender :genderPoss :numPoss]
-           :synsemClass [:case  :derivedStemAug :polarity :pos :proClass :tam :tamStemForm ]
-           :inflClass [:conjSubClass  ]
-           :otherClass [ ]
-          }
-:morphemes {
-  :COPULA {:gloss "[x]", :lemma "[y]", }
-  :PERSSUFF {:gloss "[x]", :lemma "[y]", }
-  :PRO {:gloss "[x]", :lemma "[y]", }
-}
- :lexemes {
-  :dee {:conjSubClass :Conjugation3, :gloss "_NULL", :lemma "dee", :pos :Verb}
-  :dub {:conjSubClass :Conjugation1, :gloss "_NULL", :lemma "dub", :pos :Verb}
-  :kor {:conjSubClass :Conjugation4, :gloss "_NULL", :lemma "kor", :pos :Verb}
-  :seg {:conjSubClass :Conjugation2, :gloss "_NULL", :lemma "seg", :pos :Verb}
-}
+:schemata{:gender [:Common :Fem :Masc],
+          :numPoss [:P_Plural :P_Singular],
+          :conjSubClass [:Conjugation1 :Conjugation2 :Conjugation3 :Conjugation4],
+          :polarity [:Affirmative :Negative],
+          :case [:Object :ObjectIndirect :Subject],
+          :conjClass [:Prefix :Suffix],
+          :tamStemForm [:Dubitative :Imperfect :Proximal],
+          :genderPoss [:P_Common :P_Fem :P_Masc],
+          :pdgmType [:Copula :Finite :TnsAspModStem :NA :PersSuff]
+          :pos [:Pronoun :Verb],
+          :person [:Neutral :Person1 :Person2 :Person3],
+          :morphClass [:Copula :PersSuff :TnsAspModStem],
+          :formType [:Stem],
+          :proClass [:Independent :Possessive],
+          :derivedStemAug [:Autobenefactivization :Comb-Extension :Inchoativization :M-Extension :Reduplication :Reflexivization :T-Extension :Transitivization :at_sat-Extension],
+          :tam [:DubitativePast :Future :Future1 :Future2 :Future3 :FutureProximate1 :FutureProximate2 :Imperative :ImperativeJussive :ImperfectComp :ImperfectGeneral :ImperfectPast :ImperfectPresent :ImperfectSimple :Jussive :Non-past :Past :PerfectComp1 :PerfectComp2 :PerfectSimple :PrefectPast :Present],
+          :number [:Plural :Singular]}
+:pclass {:pngClass [:person :number :gender :genderPoss :numPoss],
+          :synsemClass [:case :derivedStemAug :polarity :pos :proClass :tam :tamStemForm],
+          :inflClass [:conjSubClass],
+          :otherClass []}
+:morphemes{:COPULA {:gloss "[x]", :lemma "[y]"},
+           :PERSSUFF {:gloss "[x]", :lemma "[y]"},
+           :PRO {:gloss "[x]", :lemma "[y]"}}
+:lexemes{:dee {:conjSubClass :Conjugation3, :gloss "_NULL", :lemma "dee", :pos :Verb},
+           :dub {:conjSubClass :Conjugation1, :gloss "_NULL", :lemma "dub", :pos :Verb},
+           :kor {:conjSubClass :Conjugation4, :gloss "_NULL", :lemma "kor", :pos :Verb},
+           :seg {:conjSubClass :Conjugation2, :gloss "_NULL", :lemma "seg", :pos :Verb}}
 :lxterms [
     {:label "bayso-PPoss"
+    :pdgmType :NA
     :common {:lexeme :PRO,
-            :pos :Pronoun,
-            :proClass :Possessive}
-    :terms [[:genderPoss :numPoss :number :person :gender :token] ;; schema
-            [:P_Common :P_Plural :Singular :Person1 :Common "o tee"]
-            [:P_Common :P_Plural :Singular :Person2 :Common "o taa"]
-            [:P_Common :P_Plural :Singular :Person3 :Masc "o tessa"]
-            [:P_Common :P_Plural :Singular :Person3 :Fem "o tisee"]
-            [:P_Common :P_Plural :Plural :Person1 :Common "o taani"]
-            [:P_Common :P_Plural :Plural :Person2 :Common "o tísin"]
-            [:P_Common :P_Plural :Plural :Person3 :Common "o tisoo"]
-            [:P_Fem :P_Singular :Singular :Person1 :Common "ta tee"]
-            [:P_Fem :P_Singular :Singular :Person2 :Common "ta taa"]
-            [:P_Fem :P_Singular :Singular :Person3 :Masc "ta tessa"]
-            [:P_Fem :P_Singular :Singular :Person3 :Fem "ta tisee"]
-            [:P_Fem :P_Singular :Plural :Person1 :Common "ta taani"]
-            [:P_Fem :P_Singular :Plural :Person2 :Common "ta tísin"]
-            [:P_Fem :P_Singular :Plural :Person3 :Common "ta tisoo"]
-            [:P_Masc :P_Singular :Singular :Person1 :Common "ka kee"]
-            [:P_Masc :P_Singular :Singular :Person2 :Common "ka kaa"]
-            [:P_Masc :P_Singular :Singular :Person3 :Masc "ka kessa"]
-            [:P_Masc :P_Singular :Singular :Person3 :Fem "ka kisee"]
-            [:P_Masc :P_Singular :Plural :Person1 :Common "ka kaani"]
-            [:P_Masc :P_Singular :Plural :Person2 :Common "ka kísin"]
+             :pos :Pronoun,
+             :proClass :Possessive}
+    :terms [[:genderPoss :numPoss :number :person :gender :token],
+            [:P_Common :P_Plural :Singular :Person1 :Common "o tee"],
+            [:P_Common :P_Plural :Singular :Person2 :Common "o taa"],
+            [:P_Common :P_Plural :Singular :Person3 :Masc "o tessa"],
+            [:P_Common :P_Plural :Singular :Person3 :Fem "o tisee"],
+            [:P_Common :P_Plural :Plural :Person1 :Common "o taani"],
+            [:P_Common :P_Plural :Plural :Person2 :Common "o tísin"],
+            [:P_Common :P_Plural :Plural :Person3 :Common "o tisoo"],
+            [:P_Fem :P_Singular :Singular :Person1 :Common "ta tee"],
+            [:P_Fem :P_Singular :Singular :Person2 :Common "ta taa"],
+            [:P_Fem :P_Singular :Singular :Person3 :Masc "ta tessa"],
+            [:P_Fem :P_Singular :Singular :Person3 :Fem "ta tisee"],
+            [:P_Fem :P_Singular :Plural :Person1 :Common "ta taani"],
+            [:P_Fem :P_Singular :Plural :Person2 :Common "ta tísin"],
+            [:P_Fem :P_Singular :Plural :Person3 :Common "ta tisoo"],
+            [:P_Masc :P_Singular :Singular :Person1 :Common "ka kee"],
+            [:P_Masc :P_Singular :Singular :Person2 :Common "ka kaa"],
+            [:P_Masc :P_Singular :Singular :Person3 :Masc "ka kessa"],
+            [:P_Masc :P_Singular :Singular :Person3 :Fem "ka kisee"],
+            [:P_Masc :P_Singular :Plural :Person1 :Common "ka kaani"],
+            [:P_Masc :P_Singular :Plural :Person2 :Common "ka kísin"],
             [:P_Masc :P_Singular :Plural :Person3 :Common "ka kisoo "]]
     }
     {:label "bayso-VConj1AffDubPast-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :DubitativePast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "dúbigira"]
-            [:Singular :Person2 :Common "dúbigitta"]
-            [:Singular :Person3 :Masc "dúbigira"]
-            [:Singular :Person3 :Fem "dúbigitta"]
-            [:Plural :Person1 :Common "dúbiginna"]
-            [:Plural :Person2 :Common "dúbigittan"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :DubitativePast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "dúbigira"],
+            [:Singular :Person2 :Common "dúbigitta"],
+            [:Singular :Person3 :Masc "dúbigira"],
+            [:Singular :Person3 :Fem "dúbigitta"],
+            [:Plural :Person1 :Common "dúbiginna"],
+            [:Plural :Person2 :Common "dúbigittan"],
             [:Plural :Person3 :Common "dúbigiran"]]
     }
     {:label "bayso-VConj1AffFut1-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Future1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "dubiro´"]
-            [:Singular :Person2 :Common "dubto´"]
-            [:Singular :Person3 :Masc "dubiro´"]
-            [:Singular :Person3 :Fem "dubto´"]
-            [:Plural :Person1 :Common "dubno´"]
-            [:Plural :Person2 :Common "dubtán"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Future1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "dubiro´"],
+            [:Singular :Person2 :Common "dubto´"],
+            [:Singular :Person3 :Masc "dubiro´"],
+            [:Singular :Person3 :Fem "dubto´"],
+            [:Plural :Person1 :Common "dubno´"],
+            [:Plural :Person2 :Common "dubtán"],
             [:Plural :Person3 :Common "dubirán"]]
     }
     {:label "bayso-VConj1AffFut2-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Future2}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "dubiro´wa"]
-            [:Singular :Person2 :Common "dubto´wa"]
-            [:Singular :Person3 :Masc "dubiro´wa"]
-            [:Singular :Person3 :Fem "dubto´wa"]
-            [:Plural :Person1 :Common "dubno´wa"]
-            [:Plural :Person2 :Common "dubtánwa"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Future2}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "dubiro´wa"],
+            [:Singular :Person2 :Common "dubto´wa"],
+            [:Singular :Person3 :Masc "dubiro´wa"],
+            [:Singular :Person3 :Fem "dubto´wa"],
+            [:Plural :Person1 :Common "dubno´wa"],
+            [:Plural :Person2 :Common "dubtánwa"],
             [:Plural :Person3 :Common "dubiránwa"]]
     }
     {:label "bayso-VConj1AffFut3-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Future3}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "dúbinara"]
-            [:Singular :Person2 :Common "dúbinata"]
-            [:Singular :Person3 :Masc "dúbinara"]
-            [:Singular :Person3 :Fem "dúbinatta"]
-            [:Plural :Person1 :Common "dúbinanna"]
-            [:Plural :Person2 :Common "dúbinattan"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Future3}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "dúbinara"],
+            [:Singular :Person2 :Common "dúbinata"],
+            [:Singular :Person3 :Masc "dúbinara"],
+            [:Singular :Person3 :Fem "dúbinatta"],
+            [:Plural :Person1 :Common "dúbinanna"],
+            [:Plural :Person2 :Common "dúbinattan"],
             [:Plural :Person3 :Common "dúbinaran"]]
     }
     {:label "bayso-VConj1AffFutProx1-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :FutureProximate1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "dúbingira"]
-            [:Singular :Person2 :Common "dúbingitta"]
-            [:Singular :Person3 :Masc "dúbingira"]
-            [:Singular :Person3 :Fem "dúbingitta"]
-            [:Plural :Person1 :Common "dúbinginna"]
-            [:Plural :Person2 :Common "dúbingittan"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :FutureProximate1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "dúbingira"],
+            [:Singular :Person2 :Common "dúbingitta"],
+            [:Singular :Person3 :Masc "dúbingira"],
+            [:Singular :Person3 :Fem "dúbingitta"],
+            [:Plural :Person1 :Common "dúbinginna"],
+            [:Plural :Person2 :Common "dúbingittan"],
             [:Plural :Person3 :Common "dúbingiran"]]
     }
     {:label "bayso-VConj1AffFutProx2-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :FutureProximate2}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "dúbinaro"]
-            [:Singular :Person2 :Common "dúbinatto"]
-            [:Singular :Person3 :Masc "dúbinaro"]
-            [:Singular :Person3 :Fem "dúbinatto"]
-            [:Plural :Person1 :Common "dúbinanno"]
-            [:Plural :Person2 :Common "dúbinatten"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :FutureProximate2}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "dúbinaro"],
+            [:Singular :Person2 :Common "dúbinatto"],
+            [:Singular :Person3 :Masc "dúbinaro"],
+            [:Singular :Person3 :Fem "dúbinatto"],
+            [:Plural :Person1 :Common "dúbinanno"],
+            [:Plural :Person2 :Common "dúbinatten"],
             [:Plural :Person3 :Common "dúbinaran"]]
     }
     {:label "bayso-VConj1AffImperfComp-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :ImperfectComp}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "dubára"]
-            [:Singular :Person2 :Common "dubátta"]
-            [:Singular :Person3 :Masc "dubára"]
-            [:Singular :Person3 :Fem "dubátta"]
-            [:Plural :Person1 :Common "dubánna"]
-            [:Plural :Person2 :Common "dubáttan"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :ImperfectComp}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "dubára"],
+            [:Singular :Person2 :Common "dubátta"],
+            [:Singular :Person3 :Masc "dubára"],
+            [:Singular :Person3 :Fem "dubátta"],
+            [:Plural :Person1 :Common "dubánna"],
+            [:Plural :Person2 :Common "dubáttan"],
             [:Plural :Person3 :Common "dubáran"]]
     }
     {:label "bayso-VConj1AffImperfPast-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :ImperfectPast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "dúbinare"]
-            [:Singular :Person2 :Common "dúbinatte"]
-            [:Singular :Person3 :Masc "dúbinare"]
-            [:Singular :Person3 :Fem "dúbinatte"]
-            [:Plural :Person1 :Common "dúbinanne"]
-            [:Plural :Person2 :Common "dúbinatten"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :ImperfectPast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "dúbinare"],
+            [:Singular :Person2 :Common "dúbinatte"],
+            [:Singular :Person3 :Masc "dúbinare"],
+            [:Singular :Person3 :Fem "dúbinatte"],
+            [:Plural :Person1 :Common "dúbinanne"],
+            [:Plural :Person2 :Common "dúbinatten"],
             [:Plural :Person3 :Common "dúbinaren"]]
     }
     {:label "bayso-VConj1AffImperfPres-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :ImperfectPresent}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "dubáagira"]
-            [:Singular :Person2 :Common "dubáagitta"]
-            [:Singular :Person3 :Masc "dubáagira"]
-            [:Singular :Person3 :Fem "dubáagitta"]
-            [:Plural :Person1 :Common "dubáaginna"]
-            [:Plural :Person2 :Common "dubáagittan"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :ImperfectPresent}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "dubáagira"],
+            [:Singular :Person2 :Common "dubáagitta"],
+            [:Singular :Person3 :Masc "dubáagira"],
+            [:Singular :Person3 :Fem "dubáagitta"],
+            [:Plural :Person1 :Common "dubáaginna"],
+            [:Plural :Person2 :Common "dubáagittan"],
             [:Plural :Person3 :Common "dubáagiran"]]
     }
     {:label "bayso-VConj1AffImperfSimple-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :ImperfectSimple}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "dubá"]
-            [:Singular :Person2 :Common "dubtá"]
-            [:Singular :Person3 :Masc "dubá"]
-            [:Singular :Person3 :Fem "dubtá"]
-            [:Plural :Person1 :Common "dubná"]
-            [:Plural :Person2 :Common "dubtán"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :ImperfectSimple}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "dubá"],
+            [:Singular :Person2 :Common "dubtá"],
+            [:Singular :Person3 :Masc "dubá"],
+            [:Singular :Person3 :Fem "dubtá"],
+            [:Plural :Person1 :Common "dubná"],
+            [:Plural :Person2 :Common "dubtán"],
             [:Plural :Person3 :Common "dubán"]]
     }
     {:label "bayso-VConj1AffImprtv-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :gender :Common,
-            :lexeme :dub,
-            :person :Person2,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Imperative}
-    :terms [[:number :token] ;; schema
-            [:Singular "dubín"]
+             :conjSubClass :Conjugation1,
+             :gender :Common,
+             :lexeme :dub,
+             :person :Person2,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Imperative}
+    :terms [[:number :token],
+            [:Singular "dubín"],
             [:Plural "dubá"]]
     }
     {:label "bayso-VConj1AffJussive-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :person :Person3,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Jussive}
-    :terms [[:number :gender :token] ;; schema
-            [:Singular :Masc "há dubn"]
-            [:Singular :Fem "há dubtu"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :person :Person3,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Jussive}
+    :terms [[:number :gender :token],
+            [:Singular :Masc "há dubn"],
+            [:Singular :Fem "há dubtu"],
             [:Plural :Common "há dube(e)n"]]
     }
     {:label "bayso-VConj1AffPerfComp1-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :PerfectComp1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "dubèra"]
-            [:Singular :Person2 :Common "dubtètta"]
-            [:Singular :Person3 :Masc "dubèra"]
-            [:Singular :Person3 :Fem "dubtètta"]
-            [:Plural :Person1 :Common "dubnènna"]
-            [:Plural :Person2 :Common "dubtènta / dubtèttan"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :PerfectComp1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "dubèra"],
+            [:Singular :Person2 :Common "dubtètta"],
+            [:Singular :Person3 :Masc "dubèra"],
+            [:Singular :Person3 :Fem "dubtètta"],
+            [:Plural :Person1 :Common "dubnènna"],
+            [:Plural :Person2 :Common "dubtènta / dubtèttan"],
             [:Plural :Person3 :Common "dubènran / dubèran"]]
     }
     {:label "bayso-VConj1AffPerfComp2-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :PerfectComp2}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "dubèwa"]
-            [:Singular :Person2 :Common "dubtèwa"]
-            [:Singular :Person3 :Masc "dubèwa"]
-            [:Singular :Person3 :Fem "dubtèwa"]
-            [:Plural :Person1 :Common "dubnèwa"]
-            [:Plural :Person2 :Common "dubtènwa"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :PerfectComp2}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "dubèwa"],
+            [:Singular :Person2 :Common "dubtèwa"],
+            [:Singular :Person3 :Masc "dubèwa"],
+            [:Singular :Person3 :Fem "dubtèwa"],
+            [:Plural :Person1 :Common "dubnèwa"],
+            [:Plural :Person2 :Common "dubtènwa"],
             [:Plural :Person3 :Common "dubènwa"]]
     }
     {:label "bayso-VConj1AffPerfPast-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :PrefectPast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "dubère"]
-            [:Singular :Person2 :Common "dubtètte"]
-            [:Singular :Person3 :Masc "dubère"]
-            [:Singular :Person3 :Fem "dubtètte"]
-            [:Plural :Person1 :Common "dubnènne"]
-            [:Plural :Person2 :Common "dubtènte(n)"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :PrefectPast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "dubère"],
+            [:Singular :Person2 :Common "dubtètte"],
+            [:Singular :Person3 :Masc "dubère"],
+            [:Singular :Person3 :Fem "dubtètte"],
+            [:Plural :Person1 :Common "dubnènne"],
+            [:Plural :Person2 :Common "dubtènte(n)"],
             [:Plural :Person3 :Common "dubènre(n)"]]
     }
     {:label "bayso-VConj1AffPerfSimple-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :PerfectSimple}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "dubè"]
-            [:Singular :Person2 :Common "dubtè"]
-            [:Singular :Person3 :Masc "dubè"]
-            [:Singular :Person3 :Fem "dubtè"]
-            [:Plural :Person1 :Common "dubnè"]
-            [:Plural :Person2 :Common "dubtèn"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :PerfectSimple}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "dubè"],
+            [:Singular :Person2 :Common "dubtè"],
+            [:Singular :Person3 :Masc "dubè"],
+            [:Singular :Person3 :Fem "dubtè"],
+            [:Plural :Person1 :Common "dubnè"],
+            [:Plural :Person2 :Common "dubtèn"],
             [:Plural :Person3 :Common "dubèn"]]
     }
     {:label "bayso-VConj1NegDubPast-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :DubitativePast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko dúbigira"]
-            [:Singular :Person2 :Common "lákko dúbigitta"]
-            [:Singular :Person3 :Masc "lákko dúbigira"]
-            [:Singular :Person3 :Fem "lákko dúbigitta"]
-            [:Plural :Person1 :Common "lákko dúbiginna"]
-            [:Plural :Person2 :Common "lákko dúbigittan"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :DubitativePast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko dúbigira"],
+            [:Singular :Person2 :Common "lákko dúbigitta"],
+            [:Singular :Person3 :Masc "lákko dúbigira"],
+            [:Singular :Person3 :Fem "lákko dúbigitta"],
+            [:Plural :Person1 :Common "lákko dúbiginna"],
+            [:Plural :Person2 :Common "lákko dúbigittan"],
             [:Plural :Person3 :Common "lákko dúbigiran"]]
     }
     {:label "bayso-VConj1NegFut1-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :Future1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko dubiro´"]
-            [:Singular :Person2 :Common "lákko dubto´"]
-            [:Singular :Person3 :Masc "lákko dubiro´"]
-            [:Singular :Person3 :Fem "lákko dubto´"]
-            [:Plural :Person1 :Common "lákko dubno´"]
-            [:Plural :Person2 :Common "lákko dubtán"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :Future1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko dubiro´"],
+            [:Singular :Person2 :Common "lákko dubto´"],
+            [:Singular :Person3 :Masc "lákko dubiro´"],
+            [:Singular :Person3 :Fem "lákko dubto´"],
+            [:Plural :Person1 :Common "lákko dubno´"],
+            [:Plural :Person2 :Common "lákko dubtán"],
             [:Plural :Person3 :Common "lákko dubirán"]]
     }
     {:label "bayso-VConj1NegFutProx1-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :FutureProximate1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko dúbingira"]
-            [:Singular :Person2 :Common "lákko dúbingitta"]
-            [:Singular :Person3 :Masc "lákko dúbingira"]
-            [:Singular :Person3 :Fem "lákko dúbingitta"]
-            [:Plural :Person1 :Common "lákko dúbinginna"]
-            [:Plural :Person2 :Common "lákko dúbingittan"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :FutureProximate1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko dúbingira"],
+            [:Singular :Person2 :Common "lákko dúbingitta"],
+            [:Singular :Person3 :Masc "lákko dúbingira"],
+            [:Singular :Person3 :Fem "lákko dúbingitta"],
+            [:Plural :Person1 :Common "lákko dúbinginna"],
+            [:Plural :Person2 :Common "lákko dúbingittan"],
             [:Plural :Person3 :Common "lákko dúbingiran"]]
     }
     {:label "bayso-VConj1NegFutProx2-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :FutureProximate2}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko dúbinaro"]
-            [:Singular :Person2 :Common "lákko dúbinatto"]
-            [:Singular :Person3 :Masc "lákko dúbinaro"]
-            [:Singular :Person3 :Fem "lákko dúbinatto"]
-            [:Plural :Person1 :Common "lákko dúbinanno"]
-            [:Plural :Person2 :Common "lákko dúbinatten"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :FutureProximate2}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko dúbinaro"],
+            [:Singular :Person2 :Common "lákko dúbinatto"],
+            [:Singular :Person3 :Masc "lákko dúbinaro"],
+            [:Singular :Person3 :Fem "lákko dúbinatto"],
+            [:Plural :Person1 :Common "lákko dúbinanno"],
+            [:Plural :Person2 :Common "lákko dúbinatten"],
             [:Plural :Person3 :Common "lákko dúbinaran"]]
     }
     {:label "bayso-VConj1NegImperfGen-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :ImperfectGeneral}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko dubáro"]
-            [:Singular :Person2 :Common "lákko dubátto"]
-            [:Singular :Person3 :Masc "lákko dubáro"]
-            [:Singular :Person3 :Fem "lákko dubátto"]
-            [:Plural :Person1 :Common "lákko dubánno"]
-            [:Plural :Person2 :Common "lákko dubáttan"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :ImperfectGeneral}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko dubáro"],
+            [:Singular :Person2 :Common "lákko dubátto"],
+            [:Singular :Person3 :Masc "lákko dubáro"],
+            [:Singular :Person3 :Fem "lákko dubátto"],
+            [:Plural :Person1 :Common "lákko dubánno"],
+            [:Plural :Person2 :Common "lákko dubáttan"],
             [:Plural :Person3 :Common "lákko dubáran"]]
     }
     {:label "bayso-VConj1NegImperfPast-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :ImperfectPast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko dúbinare"]
-            [:Singular :Person2 :Common "lákko dúbinatte"]
-            [:Singular :Person3 :Masc "lákko dúbinare"]
-            [:Singular :Person3 :Fem "lákko dúbinatte"]
-            [:Plural :Person1 :Common "lákko dúbinanne"]
-            [:Plural :Person2 :Common "lákko dúbinatten"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :ImperfectPast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko dúbinare"],
+            [:Singular :Person2 :Common "lákko dúbinatte"],
+            [:Singular :Person3 :Masc "lákko dúbinare"],
+            [:Singular :Person3 :Fem "lákko dúbinatte"],
+            [:Plural :Person1 :Common "lákko dúbinanne"],
+            [:Plural :Person2 :Common "lákko dúbinatten"],
             [:Plural :Person3 :Common "lákko dúbinaren"]]
     }
     {:label "bayso-VConj1NegImperfPres-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :ImperfectPresent}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko dubáagira"]
-            [:Singular :Person2 :Common "lákko dubáagitta"]
-            [:Singular :Person3 :Masc "lákko dubáagira"]
-            [:Singular :Person3 :Fem "lákko dubáagitta"]
-            [:Plural :Person1 :Common "lákko dubáaginna"]
-            [:Plural :Person2 :Common "lákko dubáagittan"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :ImperfectPresent}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko dubáagira"],
+            [:Singular :Person2 :Common "lákko dubáagitta"],
+            [:Singular :Person3 :Masc "lákko dubáagira"],
+            [:Singular :Person3 :Fem "lákko dubáagitta"],
+            [:Plural :Person1 :Common "lákko dubáaginna"],
+            [:Plural :Person2 :Common "lákko dubáagittan"],
             [:Plural :Person3 :Common "lákko dubáagiran"]]
     }
     {:label "bayso-VConj1NegImperfSimple-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :ImperfectSimple}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko dubá"]
-            [:Singular :Person2 :Common "lákko dubtá"]
-            [:Singular :Person3 :Masc "lákko dubá"]
-            [:Singular :Person3 :Fem "lákko dubtá"]
-            [:Plural :Person1 :Common "lákko dubná"]
-            [:Plural :Person2 :Common "lákko dubtán"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :ImperfectSimple}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko dubá"],
+            [:Singular :Person2 :Common "lákko dubtá"],
+            [:Singular :Person3 :Masc "lákko dubá"],
+            [:Singular :Person3 :Fem "lákko dubtá"],
+            [:Plural :Person1 :Common "lákko dubná"],
+            [:Plural :Person2 :Common "lákko dubtán"],
             [:Plural :Person3 :Common "lákko dubán"]]
     }
     {:label "bayso-VConj1NegImprtv-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :gender :Common,
-            :lexeme :dub,
-            :person :Person2,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :Imperative}
-    :terms [[:number :token] ;; schema
-            [:Singular "aro´ dubté"]
+             :conjSubClass :Conjugation1,
+             :gender :Common,
+             :lexeme :dub,
+             :person :Person2,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :Imperative}
+    :terms [[:number :token],
+            [:Singular "aro´ dubté"],
             [:Plural "aro´ dubtén"]]
     }
     {:label "bayso-VConj1NegJussive-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :gender :Common,
-            :lexeme :dub,
-            :person :Neutral,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :Jussive}
-    :terms [[:token] ;; schema
+             :conjSubClass :Conjugation1,
+             :gender :Common,
+             :lexeme :dub,
+             :person :Neutral,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :Jussive}
+    :terms [[:token],
             ["aro´ dubo´"]]
     }
     {:label "bayso-VConj1NegPerfComp1-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :PerfectComp1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko dubéra"]
-            [:Singular :Person2 :Common "lákko dubtétta"]
-            [:Singular :Person3 :Masc "lákko dubéra"]
-            [:Singular :Person3 :Fem "lákko dubtétta"]
-            [:Plural :Person1 :Common "lákko dubnénna"]
-            [:Plural :Person2 :Common "lákko dubténta / lá dubtéttan"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :PerfectComp1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko dubéra"],
+            [:Singular :Person2 :Common "lákko dubtétta"],
+            [:Singular :Person3 :Masc "lákko dubéra"],
+            [:Singular :Person3 :Fem "lákko dubtétta"],
+            [:Plural :Person1 :Common "lákko dubnénna"],
+            [:Plural :Person2 :Common "lákko dubténta / lá dubtéttan"],
             [:Plural :Person3 :Common "lákko dubénran / lá dubéran"]]
     }
     {:label "bayso-VConj1NegPerfPast-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :PrefectPast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko dubére"]
-            [:Singular :Person2 :Common "lákko dubtétte"]
-            [:Singular :Person3 :Masc "lákko dubére"]
-            [:Singular :Person3 :Fem "lákko dubtétte"]
-            [:Plural :Person1 :Common "lákko dubnénne"]
-            [:Plural :Person2 :Common "lákko dubténte(n)"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :PrefectPast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko dubére"],
+            [:Singular :Person2 :Common "lákko dubtétte"],
+            [:Singular :Person3 :Masc "lákko dubére"],
+            [:Singular :Person3 :Fem "lákko dubtétte"],
+            [:Plural :Person1 :Common "lákko dubnénne"],
+            [:Plural :Person2 :Common "lákko dubténte(n)"],
             [:Plural :Person3 :Common "lákko dubénre(n)"]]
     }
     {:label "bayso-VConj1NegPerfSimple-dub"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation1,
-            :lexeme :dub,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :PerfectSimple}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko dubé"]
-            [:Singular :Person2 :Common "lákko dubté"]
-            [:Singular :Person3 :Masc "lákko dubé"]
-            [:Singular :Person3 :Fem "lákko dubté"]
-            [:Plural :Person1 :Common "lákko dubné"]
-            [:Plural :Person2 :Common "lákko dubtén"]
+             :conjSubClass :Conjugation1,
+             :lexeme :dub,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :PerfectSimple}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko dubé"],
+            [:Singular :Person2 :Common "lákko dubté"],
+            [:Singular :Person3 :Masc "lákko dubé"],
+            [:Singular :Person3 :Fem "lákko dubté"],
+            [:Plural :Person1 :Common "lákko dubné"],
+            [:Plural :Person2 :Common "lákko dubtén"],
             [:Plural :Person3 :Common "lákko dubén"]]
     }
     {:label "bayso-VConj2AffDubPast-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :DubitativePast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "segíigira"]
-            [:Singular :Person2 :Common "segigitta"]
-            [:Singular :Person3 :Masc "segíigira"]
-            [:Singular :Person3 :Fem "segíigitta"]
-            [:Plural :Person1 :Common "segíigina"]
-            [:Plural :Person2 :Common "segíigittan"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :DubitativePast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "segíigira"],
+            [:Singular :Person2 :Common "segigitta"],
+            [:Singular :Person3 :Masc "segíigira"],
+            [:Singular :Person3 :Fem "segíigitta"],
+            [:Plural :Person1 :Common "segíigina"],
+            [:Plural :Person2 :Common "segíigittan"],
             [:Plural :Person3 :Common "segíigiran"]]
     }
     {:label "bayso-VConj2AffFut1-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Future1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "segíiro"]
-            [:Singular :Person2 :Common "segíito"]
-            [:Singular :Person3 :Masc "segíiro"]
-            [:Singular :Person3 :Fem "segíito"]
-            [:Plural :Person1 :Common "segíinno"]
-            [:Plural :Person2 :Common "segíittan"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Future1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "segíiro"],
+            [:Singular :Person2 :Common "segíito"],
+            [:Singular :Person3 :Masc "segíiro"],
+            [:Singular :Person3 :Fem "segíito"],
+            [:Plural :Person1 :Common "segíinno"],
+            [:Plural :Person2 :Common "segíittan"],
             [:Plural :Person3 :Common "segíiran"]]
     }
     {:label "bayso-VConj2AffFut2-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Future2}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "seiiro´wa"]
-            [:Singular :Person2 :Common "segiitto´wa"]
-            [:Singular :Person3 :Masc "segiiro´wa"]
-            [:Singular :Person3 :Fem "segiitto´wa"]
-            [:Plural :Person1 :Common "segiinno´wa"]
-            [:Plural :Person2 :Common "segiittánwa"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Future2}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "seiiro´wa"],
+            [:Singular :Person2 :Common "segiitto´wa"],
+            [:Singular :Person3 :Masc "segiiro´wa"],
+            [:Singular :Person3 :Fem "segiitto´wa"],
+            [:Plural :Person1 :Common "segiinno´wa"],
+            [:Plural :Person2 :Common "segiittánwa"],
             [:Plural :Person3 :Common "segiiránwa"]]
     }
     {:label "bayso-VConj2AffFut3-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Future3}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "segíinara"]
-            [:Singular :Person2 :Common "segíinatta"]
-            [:Singular :Person3 :Masc "segíinara"]
-            [:Singular :Person3 :Fem "segíinatta"]
-            [:Plural :Person1 :Common "segíinanna"]
-            [:Plural :Person2 :Common "segíinattan"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Future3}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "segíinara"],
+            [:Singular :Person2 :Common "segíinatta"],
+            [:Singular :Person3 :Masc "segíinara"],
+            [:Singular :Person3 :Fem "segíinatta"],
+            [:Plural :Person1 :Common "segíinanna"],
+            [:Plural :Person2 :Common "segíinattan"],
             [:Plural :Person3 :Common "segíinaran"]]
     }
     {:label "bayso-VConj2AffFutProx1-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :FutureProximate1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "segíingira"]
-            [:Singular :Person2 :Common "segíingitta"]
-            [:Singular :Person3 :Masc "segíingira"]
-            [:Singular :Person3 :Fem "segíingitta"]
-            [:Plural :Person1 :Common "segíinginna"]
-            [:Plural :Person2 :Common "segíingittan"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :FutureProximate1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "segíingira"],
+            [:Singular :Person2 :Common "segíingitta"],
+            [:Singular :Person3 :Masc "segíingira"],
+            [:Singular :Person3 :Fem "segíingitta"],
+            [:Plural :Person1 :Common "segíinginna"],
+            [:Plural :Person2 :Common "segíingittan"],
             [:Plural :Person3 :Common "segíingiran"]]
     }
     {:label "bayso-VConj2AffFutProx2-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :FutureProximate2}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "segíinaro"]
-            [:Singular :Person2 :Common "segíinatto"]
-            [:Singular :Person3 :Masc "segíinaro"]
-            [:Singular :Person3 :Fem "segíinatto"]
-            [:Plural :Person1 :Common "segíinanno"]
-            [:Plural :Person2 :Common "segíinattan"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :FutureProximate2}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "segíinaro"],
+            [:Singular :Person2 :Common "segíinatto"],
+            [:Singular :Person3 :Masc "segíinaro"],
+            [:Singular :Person3 :Fem "segíinatto"],
+            [:Plural :Person1 :Common "segíinanno"],
+            [:Plural :Person2 :Common "segíinattan"],
             [:Plural :Person3 :Common "segíinaran"]]
     }
     {:label "bayso-VConj2AffImperfComp-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :ImperfectComp}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "segáara"]
-            [:Singular :Person2 :Common "segáatta"]
-            [:Singular :Person3 :Masc "segáara"]
-            [:Singular :Person3 :Fem "segáatta"]
-            [:Plural :Person1 :Common "segáanna"]
-            [:Plural :Person2 :Common "segáattan"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :ImperfectComp}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "segáara"],
+            [:Singular :Person2 :Common "segáatta"],
+            [:Singular :Person3 :Masc "segáara"],
+            [:Singular :Person3 :Fem "segáatta"],
+            [:Plural :Person1 :Common "segáanna"],
+            [:Plural :Person2 :Common "segáattan"],
             [:Plural :Person3 :Common "segáaran"]]
     }
     {:label "bayso-VConj2AffImperfPast-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :ImperfectPast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "segíinare"]
-            [:Singular :Person2 :Common "segíinatte"]
-            [:Singular :Person3 :Masc "segíinare"]
-            [:Singular :Person3 :Fem "segíinatte"]
-            [:Plural :Person1 :Common "segíinanne"]
-            [:Plural :Person2 :Common "segíinatten"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :ImperfectPast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "segíinare"],
+            [:Singular :Person2 :Common "segíinatte"],
+            [:Singular :Person3 :Masc "segíinare"],
+            [:Singular :Person3 :Fem "segíinatte"],
+            [:Plural :Person1 :Common "segíinanne"],
+            [:Plural :Person2 :Common "segíinatten"],
             [:Plural :Person3 :Common "segíinaren"]]
     }
     {:label "bayso-VConj2AffImperfPres-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :ImperfectPresent}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "segáagira"]
-            [:Singular :Person2 :Common "segáagitta"]
-            [:Singular :Person3 :Masc "segáagira"]
-            [:Singular :Person3 :Fem "segáagitta"]
-            [:Plural :Person1 :Common "segáaginna"]
-            [:Plural :Person2 :Common "segáagittan"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :ImperfectPresent}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "segáagira"],
+            [:Singular :Person2 :Common "segáagitta"],
+            [:Singular :Person3 :Masc "segáagira"],
+            [:Singular :Person3 :Fem "segáagitta"],
+            [:Plural :Person1 :Common "segáaginna"],
+            [:Plural :Person2 :Common "segáagittan"],
             [:Plural :Person3 :Common "segagiran"]]
     }
     {:label "bayso-VConj2AffImperfSimple-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :ImperfectSimple}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "koráa"]
-            [:Singular :Person2 :Common "korattá"]
-            [:Singular :Person3 :Masc "koratá"]
-            [:Singular :Person3 :Fem "korattá"]
-            [:Plural :Person1 :Common "koranná"]
-            [:Plural :Person2 :Common "korattán"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :ImperfectSimple}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "koráa"],
+            [:Singular :Person2 :Common "korattá"],
+            [:Singular :Person3 :Masc "koratá"],
+            [:Singular :Person3 :Fem "korattá"],
+            [:Plural :Person1 :Common "koranná"],
+            [:Plural :Person2 :Common "korattán"],
             [:Plural :Person3 :Common "koratán"]]
     }
     {:label "bayso-VConj2AffImprtv-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :gender :Common,
-            :lexeme :seg,
-            :person :Person2,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Imperative}
-    :terms [[:number :token] ;; schema
-            [:Singular "segíin"]
+             :conjSubClass :Conjugation2,
+             :gender :Common,
+             :lexeme :seg,
+             :person :Person2,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Imperative}
+    :terms [[:number :token],
+            [:Singular "segíin"],
             [:Plural "segáa"]]
     }
     {:label "bayso-VConj2AffJussive-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :person :Person3,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Jussive}
-    :terms [[:number :gender :token] ;; schema
-            [:Singular :Masc "há seguu"]
-            [:Singular :Fem "há segiitu"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :person :Person3,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Jussive}
+    :terms [[:number :gender :token],
+            [:Singular :Masc "há seguu"],
+            [:Singular :Fem "há segiitu"],
             [:Plural :Common "há sege(e)n"]]
     }
     {:label "bayso-VConj2AffPerfComp1-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :PerfectComp1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "segéera"]
-            [:Singular :Person2 :Common "segiitétta"]
-            [:Singular :Person3 :Masc "segéera"]
-            [:Singular :Person3 :Fem "segiitétta"]
-            [:Plural :Person1 :Common "segiinénna"]
-            [:Plural :Person2 :Common "segiiténta / segiitéttan"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :PerfectComp1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "segéera"],
+            [:Singular :Person2 :Common "segiitétta"],
+            [:Singular :Person3 :Masc "segéera"],
+            [:Singular :Person3 :Fem "segiitétta"],
+            [:Plural :Person1 :Common "segiinénna"],
+            [:Plural :Person2 :Common "segiiténta / segiitéttan"],
             [:Plural :Person3 :Common "segiiténta / segéeran"]]
     }
     {:label "bayso-VConj2AffPerfComp2-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :PerfectComp2}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "segéewa"]
-            [:Singular :Person2 :Common "segiitéwa"]
-            [:Singular :Person3 :Masc "segéewa"]
-            [:Singular :Person3 :Fem "segiitéwa"]
-            [:Plural :Person1 :Common "segiinéwa"]
-            [:Plural :Person2 :Common "segiiténwa"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :PerfectComp2}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "segéewa"],
+            [:Singular :Person2 :Common "segiitéwa"],
+            [:Singular :Person3 :Masc "segéewa"],
+            [:Singular :Person3 :Fem "segiitéwa"],
+            [:Plural :Person1 :Common "segiinéwa"],
+            [:Plural :Person2 :Common "segiiténwa"],
             [:Plural :Person3 :Common "segéenwa"]]
     }
     {:label "bayso-VConj2AffPerfPast-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :PrefectPast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "segéere"]
-            [:Singular :Person2 :Common "segiitétte"]
-            [:Singular :Person3 :Masc "segéere"]
-            [:Singular :Person3 :Fem "segiitétte"]
-            [:Plural :Person1 :Common "segiinénne"]
-            [:Plural :Person2 :Common "segiiténte(n)"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :PrefectPast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "segéere"],
+            [:Singular :Person2 :Common "segiitétte"],
+            [:Singular :Person3 :Masc "segéere"],
+            [:Singular :Person3 :Fem "segiitétte"],
+            [:Plural :Person1 :Common "segiinénne"],
+            [:Plural :Person2 :Common "segiiténte(n)"],
             [:Plural :Person3 :Common "segéenre(n) / segéeren"]]
     }
     {:label "bayso-VConj2AffPerfSimple-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :PerfectSimple}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "segée"]
-            [:Singular :Person2 :Common "segiité"]
-            [:Singular :Person3 :Masc "sege"]
-            [:Singular :Person3 :Fem "segiité"]
-            [:Plural :Person1 :Common "segiiné"]
-            [:Plural :Person2 :Common "segiitén"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :PerfectSimple}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "segée"],
+            [:Singular :Person2 :Common "segiité"],
+            [:Singular :Person3 :Masc "sege"],
+            [:Singular :Person3 :Fem "segiité"],
+            [:Plural :Person1 :Common "segiiné"],
+            [:Plural :Person2 :Common "segiitén"],
             [:Plural :Person3 :Common "segéen"]]
     }
     {:label "bayso-VConj2NegDubPast-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :DubitativePast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko segíigira"]
-            [:Singular :Person2 :Common "lákko segigitta"]
-            [:Singular :Person3 :Masc "lákko segíigira"]
-            [:Singular :Person3 :Fem "lákko segíigitta"]
-            [:Plural :Person1 :Common "lákko segíigina"]
-            [:Plural :Person2 :Common "lákko segíigittan"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :DubitativePast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko segíigira"],
+            [:Singular :Person2 :Common "lákko segigitta"],
+            [:Singular :Person3 :Masc "lákko segíigira"],
+            [:Singular :Person3 :Fem "lákko segíigitta"],
+            [:Plural :Person1 :Common "lákko segíigina"],
+            [:Plural :Person2 :Common "lákko segíigittan"],
             [:Plural :Person3 :Common "lákko segíigiran"]]
     }
     {:label "bayso-VConj2NegFut1-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :Future1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko segíiro"]
-            [:Singular :Person2 :Common "lákko segíito"]
-            [:Singular :Person3 :Masc "lákko segíiro"]
-            [:Singular :Person3 :Fem "lákko segíito"]
-            [:Plural :Person1 :Common "lákko segíinno"]
-            [:Plural :Person2 :Common "lákko segíittan"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :Future1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko segíiro"],
+            [:Singular :Person2 :Common "lákko segíito"],
+            [:Singular :Person3 :Masc "lákko segíiro"],
+            [:Singular :Person3 :Fem "lákko segíito"],
+            [:Plural :Person1 :Common "lákko segíinno"],
+            [:Plural :Person2 :Common "lákko segíittan"],
             [:Plural :Person3 :Common "lákko segíiran"]]
     }
     {:label "bayso-VConj2NegFutProx1-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :FutureProximate1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko segíingira"]
-            [:Singular :Person2 :Common "lákko segíingitta"]
-            [:Singular :Person3 :Masc "lákko segíingira"]
-            [:Singular :Person3 :Fem "lákko segíingitta"]
-            [:Plural :Person1 :Common "lákko segíinginna"]
-            [:Plural :Person2 :Common "lákko segíingittan"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :FutureProximate1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko segíingira"],
+            [:Singular :Person2 :Common "lákko segíingitta"],
+            [:Singular :Person3 :Masc "lákko segíingira"],
+            [:Singular :Person3 :Fem "lákko segíingitta"],
+            [:Plural :Person1 :Common "lákko segíinginna"],
+            [:Plural :Person2 :Common "lákko segíingittan"],
             [:Plural :Person3 :Common "lákko segíingiran"]]
     }
     {:label "bayso-VConj2NegFutProx2-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :FutureProximate2}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko segíinaro"]
-            [:Singular :Person2 :Common "lákko segíinatto"]
-            [:Singular :Person3 :Masc "lákko segíinaro"]
-            [:Singular :Person3 :Fem "lákko segíinatto"]
-            [:Plural :Person1 :Common "lákko segíinanno"]
-            [:Plural :Person2 :Common "lákko segíinattan"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :FutureProximate2}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko segíinaro"],
+            [:Singular :Person2 :Common "lákko segíinatto"],
+            [:Singular :Person3 :Masc "lákko segíinaro"],
+            [:Singular :Person3 :Fem "lákko segíinatto"],
+            [:Plural :Person1 :Common "lákko segíinanno"],
+            [:Plural :Person2 :Common "lákko segíinattan"],
             [:Plural :Person3 :Common "lákko segíinaran"]]
     }
     {:label "bayso-VConj2NegImperfPast-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :ImperfectPast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko segíinare"]
-            [:Singular :Person2 :Common "lákko segíinatte"]
-            [:Singular :Person3 :Masc "lákko segíinare"]
-            [:Singular :Person3 :Fem "lákko segíinatte"]
-            [:Plural :Person1 :Common "lákko segíinanne"]
-            [:Plural :Person2 :Common "lákko segíinatten"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :ImperfectPast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko segíinare"],
+            [:Singular :Person2 :Common "lákko segíinatte"],
+            [:Singular :Person3 :Masc "lákko segíinare"],
+            [:Singular :Person3 :Fem "lákko segíinatte"],
+            [:Plural :Person1 :Common "lákko segíinanne"],
+            [:Plural :Person2 :Common "lákko segíinatten"],
             [:Plural :Person3 :Common "lákko segíinaren"]]
     }
     {:label "bayso-VConj2NegImperfPres-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :ImperfectPresent}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko segáagira"]
-            [:Singular :Person2 :Common "lákko segáagitta"]
-            [:Singular :Person3 :Masc "lákko segáagira"]
-            [:Singular :Person3 :Fem "lákko segáagitta"]
-            [:Plural :Person1 :Common "lákko segáaginna"]
-            [:Plural :Person2 :Common "lákko segáagittan"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :ImperfectPresent}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko segáagira"],
+            [:Singular :Person2 :Common "lákko segáagitta"],
+            [:Singular :Person3 :Masc "lákko segáagira"],
+            [:Singular :Person3 :Fem "lákko segáagitta"],
+            [:Plural :Person1 :Common "lákko segáaginna"],
+            [:Plural :Person2 :Common "lákko segáagittan"],
             [:Plural :Person3 :Common "lákko segagiran"]]
     }
     {:label "bayso-VConj2NegImperfSimple-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :ImperfectSimple}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko koráa"]
-            [:Singular :Person2 :Common "lákko korattá"]
-            [:Singular :Person3 :Masc "lákko koratá"]
-            [:Singular :Person3 :Fem "lákko korattá"]
-            [:Plural :Person1 :Common "lákko koranná"]
-            [:Plural :Person2 :Common "lákko korattán"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :ImperfectSimple}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko koráa"],
+            [:Singular :Person2 :Common "lákko korattá"],
+            [:Singular :Person3 :Masc "lákko koratá"],
+            [:Singular :Person3 :Fem "lákko korattá"],
+            [:Plural :Person1 :Common "lákko koranná"],
+            [:Plural :Person2 :Common "lákko korattán"],
             [:Plural :Person3 :Common "lákko koratán"]]
     }
     {:label "bayso-VConj2NegImprtv-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :gender :Common,
-            :lexeme :seg,
-            :person :Person2,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :Imperative}
-    :terms [[:number :token] ;; schema
-            [:Singular "aro´ segiité"]
+             :conjSubClass :Conjugation2,
+             :gender :Common,
+             :lexeme :seg,
+             :person :Person2,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :Imperative}
+    :terms [[:number :token],
+            [:Singular "aro´ segiité"],
             [:Plural "aro´ segiitén"]]
     }
     {:label "bayso-VConj2NegJussive-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :gender :Common,
-            :lexeme :seg,
-            :person :Neutral,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :Jussive}
-    :terms [[:token] ;; schema
+             :conjSubClass :Conjugation2,
+             :gender :Common,
+             :lexeme :seg,
+             :person :Neutral,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :Jussive}
+    :terms [[:token],
             ["aro´ sego´o"]]
     }
     {:label "bayso-VConj2NegPerfComp1-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :PerfectComp1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko segéera"]
-            [:Singular :Person2 :Common "lákko segiitétta"]
-            [:Singular :Person3 :Masc "lákko segéera"]
-            [:Singular :Person3 :Fem "lákko segiitétta"]
-            [:Plural :Person1 :Common "lákko segiinénna"]
-            [:Plural :Person2 :Common "lákko segiiténta / lá segiitéttan"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :PerfectComp1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko segéera"],
+            [:Singular :Person2 :Common "lákko segiitétta"],
+            [:Singular :Person3 :Masc "lákko segéera"],
+            [:Singular :Person3 :Fem "lákko segiitétta"],
+            [:Plural :Person1 :Common "lákko segiinénna"],
+            [:Plural :Person2 :Common "lákko segiiténta / lá segiitéttan"],
             [:Plural :Person3 :Common "lákko segiiténta / lá segéeran"]]
     }
     {:label "bayso-VConj2NegPerfPast-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :PrefectPast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko segéere"]
-            [:Singular :Person2 :Common "lákko segiitétte"]
-            [:Singular :Person3 :Masc "lákko segéere"]
-            [:Singular :Person3 :Fem "lákko segiitétte"]
-            [:Plural :Person1 :Common "lákko segiinénne"]
-            [:Plural :Person2 :Common "lákko segiiténte(n)"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :PrefectPast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko segéere"],
+            [:Singular :Person2 :Common "lákko segiitétte"],
+            [:Singular :Person3 :Masc "lákko segéere"],
+            [:Singular :Person3 :Fem "lákko segiitétte"],
+            [:Plural :Person1 :Common "lákko segiinénne"],
+            [:Plural :Person2 :Common "lákko segiiténte(n)"],
             [:Plural :Person3 :Common "lákko segéenre(n) / lá segéeren"]]
     }
     {:label "bayso-VConj2NegPerfSimple-seg"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation2,
-            :lexeme :seg,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :PerfectSimple}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko segée"]
-            [:Singular :Person2 :Common "lákko segiité"]
-            [:Singular :Person3 :Masc "lákko sege"]
-            [:Singular :Person3 :Fem "lákko segiité"]
-            [:Plural :Person1 :Common "lákko segiiné"]
-            [:Plural :Person2 :Common "lákko segiitén"]
+             :conjSubClass :Conjugation2,
+             :lexeme :seg,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :PerfectSimple}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko segée"],
+            [:Singular :Person2 :Common "lákko segiité"],
+            [:Singular :Person3 :Masc "lákko sege"],
+            [:Singular :Person3 :Fem "lákko segiité"],
+            [:Plural :Person1 :Common "lákko segiiné"],
+            [:Plural :Person2 :Common "lákko segiitén"],
             [:Plural :Person3 :Common "lákko segéen"]]
     }
     {:label "bayso-VConj3AffDubPast-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :DubitativePast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "díigira"]
-            [:Singular :Person2 :Common "díigitta"]
-            [:Singular :Person3 :Masc "díigira"]
-            [:Singular :Person3 :Fem "díigitta"]
-            [:Plural :Person1 :Common "díiginna"]
-            [:Plural :Person2 :Common "díigittan"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :DubitativePast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "díigira"],
+            [:Singular :Person2 :Common "díigitta"],
+            [:Singular :Person3 :Masc "díigira"],
+            [:Singular :Person3 :Fem "díigitta"],
+            [:Plural :Person1 :Common "díiginna"],
+            [:Plural :Person2 :Common "díigittan"],
             [:Plural :Person3 :Common "díigiran"]]
     }
     {:label "bayso-VConj3AffFut1-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Future1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "deero´"]
-            [:Singular :Person2 :Common "deeto´"]
-            [:Singular :Person3 :Masc "deero´"]
-            [:Singular :Person3 :Fem "deeto´"]
-            [:Plural :Person1 :Common "deeno´"]
-            [:Plural :Person2 :Common "deetán"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Future1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "deero´"],
+            [:Singular :Person2 :Common "deeto´"],
+            [:Singular :Person3 :Masc "deero´"],
+            [:Singular :Person3 :Fem "deeto´"],
+            [:Plural :Person1 :Common "deeno´"],
+            [:Plural :Person2 :Common "deetán"],
             [:Plural :Person3 :Common "deerán"]]
     }
     {:label "bayso-VConj3AffFut2-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Future2}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "deero´wa"]
-            [:Singular :Person2 :Common "deetto´wa"]
-            [:Singular :Person3 :Masc "deero´wa"]
-            [:Singular :Person3 :Fem "deetto´wa"]
-            [:Plural :Person1 :Common "deenno´wa"]
-            [:Plural :Person2 :Common "deettánwa"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Future2}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "deero´wa"],
+            [:Singular :Person2 :Common "deetto´wa"],
+            [:Singular :Person3 :Masc "deero´wa"],
+            [:Singular :Person3 :Fem "deetto´wa"],
+            [:Plural :Person1 :Common "deenno´wa"],
+            [:Plural :Person2 :Common "deettánwa"],
             [:Plural :Person3 :Common "deeránwa"]]
     }
     {:label "bayso-VConj3AffFut3-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Future3}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "díinara"]
-            [:Singular :Person2 :Common "díianatta"]
-            [:Singular :Person3 :Masc "díinara"]
-            [:Singular :Person3 :Fem "díinatta"]
-            [:Plural :Person1 :Common "díinanna"]
-            [:Plural :Person2 :Common "díinattan"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Future3}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "díinara"],
+            [:Singular :Person2 :Common "díianatta"],
+            [:Singular :Person3 :Masc "díinara"],
+            [:Singular :Person3 :Fem "díinatta"],
+            [:Plural :Person1 :Common "díinanna"],
+            [:Plural :Person2 :Common "díinattan"],
             [:Plural :Person3 :Common "díinaran"]]
     }
     {:label "bayso-VConj3AffFutProx1-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :FutureProximate1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "díingira"]
-            [:Singular :Person2 :Common "díingitta"]
-            [:Singular :Person3 :Masc "díingira"]
-            [:Singular :Person3 :Fem "díingitta"]
-            [:Plural :Person1 :Common "díinginna"]
-            [:Plural :Person2 :Common "díingittan"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :FutureProximate1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "díingira"],
+            [:Singular :Person2 :Common "díingitta"],
+            [:Singular :Person3 :Masc "díingira"],
+            [:Singular :Person3 :Fem "díingitta"],
+            [:Plural :Person1 :Common "díinginna"],
+            [:Plural :Person2 :Common "díingittan"],
             [:Plural :Person3 :Common "díingiran"]]
     }
     {:label "bayso-VConj3AffFutProx2-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :FutureProximate2}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "díianaro"]
-            [:Singular :Person2 :Common "díinatto"]
-            [:Singular :Person3 :Masc "díianaro"]
-            [:Singular :Person3 :Fem "díianatto"]
-            [:Plural :Person1 :Common "díiananno"]
-            [:Plural :Person2 :Common "díianattan"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :FutureProximate2}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "díianaro"],
+            [:Singular :Person2 :Common "díinatto"],
+            [:Singular :Person3 :Masc "díianaro"],
+            [:Singular :Person3 :Fem "díianatto"],
+            [:Plural :Person1 :Common "díiananno"],
+            [:Plural :Person2 :Common "díianattan"],
             [:Plural :Person3 :Common "díianaran"]]
     }
     {:label "bayso-VConj3AffImperfComp-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :ImperfectComp}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "dáara"]
-            [:Singular :Person2 :Common "dáatta"]
-            [:Singular :Person3 :Masc "dáara"]
-            [:Singular :Person3 :Fem "dáatta"]
-            [:Plural :Person1 :Common "dáanna"]
-            [:Plural :Person2 :Common "dáattan"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :ImperfectComp}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "dáara"],
+            [:Singular :Person2 :Common "dáatta"],
+            [:Singular :Person3 :Masc "dáara"],
+            [:Singular :Person3 :Fem "dáatta"],
+            [:Plural :Person1 :Common "dáanna"],
+            [:Plural :Person2 :Common "dáattan"],
             [:Plural :Person3 :Common "dáaran"]]
     }
     {:label "bayso-VConj3AffImperfPast-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :ImperfectPast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "díinare"]
-            [:Singular :Person2 :Common "díinatte"]
-            [:Singular :Person3 :Masc "díinare"]
-            [:Singular :Person3 :Fem "díinatte"]
-            [:Plural :Person1 :Common "díinanne"]
-            [:Plural :Person2 :Common "díinatten"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :ImperfectPast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "díinare"],
+            [:Singular :Person2 :Common "díinatte"],
+            [:Singular :Person3 :Masc "díinare"],
+            [:Singular :Person3 :Fem "díinatte"],
+            [:Plural :Person1 :Common "díinanne"],
+            [:Plural :Person2 :Common "díinatten"],
             [:Plural :Person3 :Common "díinaren"]]
     }
     {:label "bayso-VConj3AffImperfPres-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :ImperfectPresent}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "diaáagira"]
-            [:Singular :Person2 :Common "diáagitta"]
-            [:Singular :Person3 :Masc "diáagira"]
-            [:Singular :Person3 :Fem "diáagitta"]
-            [:Plural :Person1 :Common "diáaginna"]
-            [:Plural :Person2 :Common "diáagittan"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :ImperfectPresent}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "diaáagira"],
+            [:Singular :Person2 :Common "diáagitta"],
+            [:Singular :Person3 :Masc "diáagira"],
+            [:Singular :Person3 :Fem "diáagitta"],
+            [:Plural :Person1 :Common "diáaginna"],
+            [:Plural :Person2 :Common "diáagittan"],
             [:Plural :Person3 :Common "diáagiran"]]
     }
     {:label "bayso-VConj3AffImprtv-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :gender :Common,
-            :lexeme :dee,
-            :person :Person2,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Imperative}
-    :terms [[:number :token] ;; schema
-            [:Singular "déen"]
+             :conjSubClass :Conjugation3,
+             :gender :Common,
+             :lexeme :dee,
+             :person :Person2,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Imperative}
+    :terms [[:number :token],
+            [:Singular "déen"],
             [:Plural "diá"]]
     }
     {:label "bayso-VConj3AffJussive-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :person :Person3,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Jussive}
-    :terms [[:number :gender :token] ;; schema
-            [:Singular :Masc "há deu"]
-            [:Singular :Fem "há deetu"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :person :Person3,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Jussive}
+    :terms [[:number :gender :token],
+            [:Singular :Masc "há deu"],
+            [:Singular :Fem "há deetu"],
             [:Plural :Common "há de(e)n"]]
     }
     {:label "bayso-VConj3AffPerfComp1-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :PerfectComp1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "déera"]
-            [:Singular :Person2 :Common "deetétta"]
-            [:Singular :Person3 :Masc "déera"]
-            [:Singular :Person3 :Fem "deetétta"]
-            [:Plural :Person1 :Common "deenénna"]
-            [:Plural :Person2 :Common "deeténta / deetéttan"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :PerfectComp1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "déera"],
+            [:Singular :Person2 :Common "deetétta"],
+            [:Singular :Person3 :Masc "déera"],
+            [:Singular :Person3 :Fem "deetétta"],
+            [:Plural :Person1 :Common "deenénna"],
+            [:Plural :Person2 :Common "deeténta / deetéttan"],
             [:Plural :Person3 :Common "déenran / déeran"]]
     }
     {:label "bayso-VConj3AffPerfComp2-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :PerfectComp2}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "déewa"]
-            [:Singular :Person2 :Common "deetéwa"]
-            [:Singular :Person3 :Masc "déewa"]
-            [:Singular :Person3 :Fem "deetéwa"]
-            [:Plural :Person1 :Common "deenéwa"]
-            [:Plural :Person2 :Common "deeténwa"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :PerfectComp2}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "déewa"],
+            [:Singular :Person2 :Common "deetéwa"],
+            [:Singular :Person3 :Masc "déewa"],
+            [:Singular :Person3 :Fem "deetéwa"],
+            [:Plural :Person1 :Common "deenéwa"],
+            [:Plural :Person2 :Common "deeténwa"],
             [:Plural :Person3 :Common "déenwa"]]
     }
     {:label "bayso-VConj3AffPerfPast-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :PrefectPast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "déere"]
-            [:Singular :Person2 :Common "deetétte"]
-            [:Singular :Person3 :Masc "déere"]
-            [:Singular :Person3 :Fem "deetétte"]
-            [:Plural :Person1 :Common "deenénne"]
-            [:Plural :Person2 :Common "deeténte(n)"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :PrefectPast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "déere"],
+            [:Singular :Person2 :Common "deetétte"],
+            [:Singular :Person3 :Masc "déere"],
+            [:Singular :Person3 :Fem "deetétte"],
+            [:Plural :Person1 :Common "deenénne"],
+            [:Plural :Person2 :Common "deeténte(n)"],
             [:Plural :Person3 :Common "déenre(n) / déeren"]]
     }
     {:label "bayso-VConj3AffPerfSimple-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :PerfectSimple}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "dée"]
-            [:Singular :Person2 :Common "deeté"]
-            [:Singular :Person3 :Masc "dée"]
-            [:Singular :Person3 :Fem "deeté"]
-            [:Plural :Person1 :Common "deené"]
-            [:Plural :Person2 :Common "deetén"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :PerfectSimple}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "dée"],
+            [:Singular :Person2 :Common "deeté"],
+            [:Singular :Person3 :Masc "dée"],
+            [:Singular :Person3 :Fem "deeté"],
+            [:Plural :Person1 :Common "deené"],
+            [:Plural :Person2 :Common "deetén"],
             [:Plural :Person3 :Common "déen"]]
     }
     {:label "bayso-VConj3NegDubPast-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :DubitativePast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko díigira"]
-            [:Singular :Person2 :Common "lákko díigitta"]
-            [:Singular :Person3 :Masc "lákko díigira"]
-            [:Singular :Person3 :Fem "lákko díigitta"]
-            [:Plural :Person1 :Common "lákko díiginna"]
-            [:Plural :Person2 :Common "lákko díigittan"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :DubitativePast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko díigira"],
+            [:Singular :Person2 :Common "lákko díigitta"],
+            [:Singular :Person3 :Masc "lákko díigira"],
+            [:Singular :Person3 :Fem "lákko díigitta"],
+            [:Plural :Person1 :Common "lákko díiginna"],
+            [:Plural :Person2 :Common "lákko díigittan"],
             [:Plural :Person3 :Common "lákko díigiran"]]
     }
     {:label "bayso-VConj3NegFut1-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :Future1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko deero´"]
-            [:Singular :Person2 :Common "lákko deeto´"]
-            [:Singular :Person3 :Masc "lákko deero´"]
-            [:Singular :Person3 :Fem "lákko deeto´"]
-            [:Plural :Person1 :Common "lákko deeno´"]
-            [:Plural :Person2 :Common "lákko deetán"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :Future1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko deero´"],
+            [:Singular :Person2 :Common "lákko deeto´"],
+            [:Singular :Person3 :Masc "lákko deero´"],
+            [:Singular :Person3 :Fem "lákko deeto´"],
+            [:Plural :Person1 :Common "lákko deeno´"],
+            [:Plural :Person2 :Common "lákko deetán"],
             [:Plural :Person3 :Common "lákko deerán"]]
     }
     {:label "bayso-VConj3NegFutProx1-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :FutureProximate1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko díingira"]
-            [:Singular :Person2 :Common "lákko díingitta"]
-            [:Singular :Person3 :Masc "lákko díingira"]
-            [:Singular :Person3 :Fem "lákko díingitta"]
-            [:Plural :Person1 :Common "lákko díinginna"]
-            [:Plural :Person2 :Common "lákko díingittan"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :FutureProximate1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko díingira"],
+            [:Singular :Person2 :Common "lákko díingitta"],
+            [:Singular :Person3 :Masc "lákko díingira"],
+            [:Singular :Person3 :Fem "lákko díingitta"],
+            [:Plural :Person1 :Common "lákko díinginna"],
+            [:Plural :Person2 :Common "lákko díingittan"],
             [:Plural :Person3 :Common "lákko díingiran"]]
     }
     {:label "bayso-VConj3NegFutProx2-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :FutureProximate2}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko díianaro"]
-            [:Singular :Person2 :Common "lákko díinatto"]
-            [:Singular :Person3 :Masc "lákko díianaro"]
-            [:Singular :Person3 :Fem "lákko díianatto"]
-            [:Plural :Person1 :Common "lákko díiananno"]
-            [:Plural :Person2 :Common "lákko díianattan"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :FutureProximate2}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko díianaro"],
+            [:Singular :Person2 :Common "lákko díinatto"],
+            [:Singular :Person3 :Masc "lákko díianaro"],
+            [:Singular :Person3 :Fem "lákko díianatto"],
+            [:Plural :Person1 :Common "lákko díiananno"],
+            [:Plural :Person2 :Common "lákko díianattan"],
             [:Plural :Person3 :Common "lákko díianaran"]]
     }
     {:label "bayso-VConj3NegImperfPast-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :ImperfectPast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko díinare"]
-            [:Singular :Person2 :Common "lákko díinatte"]
-            [:Singular :Person3 :Masc "lákko díinare"]
-            [:Singular :Person3 :Fem "lákko díinatte"]
-            [:Plural :Person1 :Common "lákko díinanne"]
-            [:Plural :Person2 :Common "lákko díinatten"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :ImperfectPast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko díinare"],
+            [:Singular :Person2 :Common "lákko díinatte"],
+            [:Singular :Person3 :Masc "lákko díinare"],
+            [:Singular :Person3 :Fem "lákko díinatte"],
+            [:Plural :Person1 :Common "lákko díinanne"],
+            [:Plural :Person2 :Common "lákko díinatten"],
             [:Plural :Person3 :Common "lákko díinaren"]]
     }
     {:label "bayso-VConj3NegImperfPres-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :ImperfectPresent}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko diaáagira"]
-            [:Singular :Person2 :Common "lákko diáagitta"]
-            [:Singular :Person3 :Masc "lákko diáagira"]
-            [:Singular :Person3 :Fem "lákko diáagitta"]
-            [:Plural :Person1 :Common "lákko diáaginna"]
-            [:Plural :Person2 :Common "lákko diáagittan"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :ImperfectPresent}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko diaáagira"],
+            [:Singular :Person2 :Common "lákko diáagitta"],
+            [:Singular :Person3 :Masc "lákko diáagira"],
+            [:Singular :Person3 :Fem "lákko diáagitta"],
+            [:Plural :Person1 :Common "lákko diáaginna"],
+            [:Plural :Person2 :Common "lákko diáagittan"],
             [:Plural :Person3 :Common "lákko diáagiran"]]
     }
     {:label "bayso-VConj3NegImprtv-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :gender :Common,
-            :lexeme :dee,
-            :person :Person2,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :Imperative}
-    :terms [[:number :token] ;; schema
-            [:Singular "aro´ deeté"]
+             :conjSubClass :Conjugation3,
+             :gender :Common,
+             :lexeme :dee,
+             :person :Person2,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :Imperative}
+    :terms [[:number :token],
+            [:Singular "aro´ deeté"],
             [:Plural "aro´ deetén"]]
     }
     {:label "bayso-VConj3NegPerfComp1-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :PerfectComp1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko déera"]
-            [:Singular :Person2 :Common "lákko deetétta"]
-            [:Singular :Person3 :Masc "lákko déera"]
-            [:Singular :Person3 :Fem "lákko deetétta"]
-            [:Plural :Person1 :Common "lákko deenénna"]
-            [:Plural :Person2 :Common "lákko deeténta / lá deetéttan"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :PerfectComp1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko déera"],
+            [:Singular :Person2 :Common "lákko deetétta"],
+            [:Singular :Person3 :Masc "lákko déera"],
+            [:Singular :Person3 :Fem "lákko deetétta"],
+            [:Plural :Person1 :Common "lákko deenénna"],
+            [:Plural :Person2 :Common "lákko deeténta / lá deetéttan"],
             [:Plural :Person3 :Common "lákko déenran / lá déeran"]]
     }
     {:label "bayso-VConj3NegPerfPast-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :PrefectPast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko déere"]
-            [:Singular :Person2 :Common "lákko deetétte"]
-            [:Singular :Person3 :Masc "lákko déere"]
-            [:Singular :Person3 :Fem "lákko deetétte"]
-            [:Plural :Person1 :Common "lákko deenénne"]
-            [:Plural :Person2 :Common "lákko deeténte(n)"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :PrefectPast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko déere"],
+            [:Singular :Person2 :Common "lákko deetétte"],
+            [:Singular :Person3 :Masc "lákko déere"],
+            [:Singular :Person3 :Fem "lákko deetétte"],
+            [:Plural :Person1 :Common "lákko deenénne"],
+            [:Plural :Person2 :Common "lákko deeténte(n)"],
             [:Plural :Person3 :Common "lákko déenre(n) / lá déeren"]]
     }
     {:label "bayso-VConj3NegPerfSimple-dee"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation3,
-            :lexeme :dee,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :PerfectSimple}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko dée"]
-            [:Singular :Person2 :Common "lákko deeté"]
-            [:Singular :Person3 :Masc "lákko dée"]
-            [:Singular :Person3 :Fem "lákko deeté"]
-            [:Plural :Person1 :Common "lákko deené"]
-            [:Plural :Person2 :Common "lákko deetén"]
+             :conjSubClass :Conjugation3,
+             :lexeme :dee,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :PerfectSimple}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko dée"],
+            [:Singular :Person2 :Common "lákko deeté"],
+            [:Singular :Person3 :Masc "lákko dée"],
+            [:Singular :Person3 :Fem "lákko deeté"],
+            [:Plural :Person1 :Common "lákko deené"],
+            [:Plural :Person2 :Common "lákko deetén"],
             [:Plural :Person3 :Common "lákko déen"]]
     }
     {:label "bayso-VConj4AffDubPast-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :DubitativePast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "koráigira"]
-            [:Singular :Person2 :Common "koráigitta"]
-            [:Singular :Person3 :Masc "koráigira"]
-            [:Singular :Person3 :Fem "koráigitta"]
-            [:Plural :Person1 :Common "koráiginna"]
-            [:Plural :Person2 :Common "koráigittan"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :DubitativePast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "koráigira"],
+            [:Singular :Person2 :Common "koráigitta"],
+            [:Singular :Person3 :Masc "koráigira"],
+            [:Singular :Person3 :Fem "koráigitta"],
+            [:Plural :Person1 :Common "koráiginna"],
+            [:Plural :Person2 :Common "koráigittan"],
             [:Plural :Person3 :Common "koráigiran"]]
     }
     {:label "bayso-VConj4AffFut1-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Future1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "koráro"]
-            [:Singular :Person2 :Common "korátto"]
-            [:Singular :Person3 :Masc "koráro"]
-            [:Singular :Person3 :Fem "korátto"]
-            [:Plural :Person1 :Common "koránno"]
-            [:Plural :Person2 :Common "koráttan"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Future1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "koráro"],
+            [:Singular :Person2 :Common "korátto"],
+            [:Singular :Person3 :Masc "koráro"],
+            [:Singular :Person3 :Fem "korátto"],
+            [:Plural :Person1 :Common "koránno"],
+            [:Plural :Person2 :Common "koráttan"],
             [:Plural :Person3 :Common "koráran"]]
     }
     {:label "bayso-VConj4AffFut2-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Future2}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "koraro´wa"]
-            [:Singular :Person2 :Common "koratto´wa"]
-            [:Singular :Person3 :Masc "koraro´wa"]
-            [:Singular :Person3 :Fem "koratto´wa"]
-            [:Plural :Person1 :Common "koranno´wa"]
-            [:Plural :Person2 :Common "korattánwa"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Future2}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "koraro´wa"],
+            [:Singular :Person2 :Common "koratto´wa"],
+            [:Singular :Person3 :Masc "koraro´wa"],
+            [:Singular :Person3 :Fem "koratto´wa"],
+            [:Plural :Person1 :Common "koranno´wa"],
+            [:Plural :Person2 :Common "korattánwa"],
             [:Plural :Person3 :Common "koratánwa"]]
     }
     {:label "bayso-VConj4AffFut3-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Future3}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "koráinara"]
-            [:Singular :Person2 :Common "koráinatta"]
-            [:Singular :Person3 :Masc "koráinara"]
-            [:Singular :Person3 :Fem "koráinatta"]
-            [:Plural :Person1 :Common "koráinanna"]
-            [:Plural :Person2 :Common "koráinattan"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Future3}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "koráinara"],
+            [:Singular :Person2 :Common "koráinatta"],
+            [:Singular :Person3 :Masc "koráinara"],
+            [:Singular :Person3 :Fem "koráinatta"],
+            [:Plural :Person1 :Common "koráinanna"],
+            [:Plural :Person2 :Common "koráinattan"],
             [:Plural :Person3 :Common "koráinaran"]]
     }
     {:label "bayso-VConj4AffFutProx1-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :FutureProximate1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "koráingira"]
-            [:Singular :Person2 :Common "koráingitta"]
-            [:Singular :Person3 :Masc "koráingira"]
-            [:Singular :Person3 :Fem "koráingitta"]
-            [:Plural :Person1 :Common "koráinginna"]
-            [:Plural :Person2 :Common "koráingittan"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :FutureProximate1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "koráingira"],
+            [:Singular :Person2 :Common "koráingitta"],
+            [:Singular :Person3 :Masc "koráingira"],
+            [:Singular :Person3 :Fem "koráingitta"],
+            [:Plural :Person1 :Common "koráinginna"],
+            [:Plural :Person2 :Common "koráingittan"],
             [:Plural :Person3 :Common "koráingiran"]]
     }
     {:label "bayso-VConj4AffFutProx2-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :FutureProximate2}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "koráinaro"]
-            [:Singular :Person2 :Common "koráinatto"]
-            [:Singular :Person3 :Masc "koráinaro"]
-            [:Singular :Person3 :Fem "koráinatto"]
-            [:Plural :Person1 :Common "koráinanno"]
-            [:Plural :Person2 :Common "koráinattan"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :FutureProximate2}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "koráinaro"],
+            [:Singular :Person2 :Common "koráinatto"],
+            [:Singular :Person3 :Masc "koráinaro"],
+            [:Singular :Person3 :Fem "koráinatto"],
+            [:Plural :Person1 :Common "koráinanno"],
+            [:Plural :Person2 :Common "koráinattan"],
             [:Plural :Person3 :Common "koráinaran"]]
     }
     {:label "bayso-VConj4AffImperfPast-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :ImperfectPast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "koráinare"]
-            [:Singular :Person2 :Common "koráinatte"]
-            [:Singular :Person3 :Masc "koráinare"]
-            [:Singular :Person3 :Fem "koráinatte"]
-            [:Plural :Person1 :Common "koráinanne"]
-            [:Plural :Person2 :Common "koráinatten"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :ImperfectPast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "koráinare"],
+            [:Singular :Person2 :Common "koráinatte"],
+            [:Singular :Person3 :Masc "koráinare"],
+            [:Singular :Person3 :Fem "koráinatte"],
+            [:Plural :Person1 :Common "koráinanne"],
+            [:Plural :Person2 :Common "koráinatten"],
             [:Plural :Person3 :Common "koráinaren"]]
     }
     {:label "bayso-VConj4AffImperfPres-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :ImperfectPresent}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "koratáagira"]
-            [:Singular :Person2 :Common "koratáagitta"]
-            [:Singular :Person3 :Masc "koratáagira"]
-            [:Singular :Person3 :Fem "koratáagitta"]
-            [:Plural :Person1 :Common "koratáaginna"]
-            [:Plural :Person2 :Common "koratáagittan"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :ImperfectPresent}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "koratáagira"],
+            [:Singular :Person2 :Common "koratáagitta"],
+            [:Singular :Person3 :Masc "koratáagira"],
+            [:Singular :Person3 :Fem "koratáagitta"],
+            [:Plural :Person1 :Common "koratáaginna"],
+            [:Plural :Person2 :Common "koratáagittan"],
             [:Plural :Person3 :Common "koratáagiran"]]
     }
     {:label "bayso-VConj4AffImperfSimple-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :ImperfectSimple}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "koráa"]
-            [:Singular :Person2 :Common "korattá"]
-            [:Singular :Person3 :Masc "koratá"]
-            [:Singular :Person3 :Fem "korattá"]
-            [:Plural :Person1 :Common "koranná"]
-            [:Plural :Person2 :Common "korattán"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :ImperfectSimple}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "koráa"],
+            [:Singular :Person2 :Common "korattá"],
+            [:Singular :Person3 :Masc "koratá"],
+            [:Singular :Person3 :Fem "korattá"],
+            [:Plural :Person1 :Common "koranná"],
+            [:Plural :Person2 :Common "korattán"],
             [:Plural :Person3 :Common "koratán"]]
     }
     {:label "bayso-VConj4AffImprtv-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :gender :Common,
-            :lexeme :kor,
-            :person :Person2,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Imperative}
-    :terms [[:number :token] ;; schema
-            [:Singular "ko´ra"]
+             :conjSubClass :Conjugation4,
+             :gender :Common,
+             :lexeme :kor,
+             :person :Person2,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Imperative}
+    :terms [[:number :token],
+            [:Singular "ko´ra"],
             [:Plural "koráen"]]
     }
     {:label "bayso-VConj4AffJussive-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :person :Person3,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Jussive}
-    :terms [[:number :gender :token] ;; schema
-            [:Singular :Masc "há koratu"]
-            [:Singular :Fem "h’a korattu"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :person :Person3,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Jussive}
+    :terms [[:number :gender :token],
+            [:Singular :Masc "há koratu"],
+            [:Singular :Fem "h’a korattu"],
             [:Plural :Common "há korate(e)n"]]
     }
     {:label "bayso-VConj4AffPerfComp1-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :PerfectComp1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "koraéra"]
-            [:Singular :Person2 :Common "korattétta"]
-            [:Singular :Person3 :Masc "koratéra"]
-            [:Singular :Person3 :Fem "korattétta"]
-            [:Plural :Person1 :Common "korannnna"]
-            [:Plural :Person2 :Common "koratténta / korattéttan"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :PerfectComp1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "koraéra"],
+            [:Singular :Person2 :Common "korattétta"],
+            [:Singular :Person3 :Masc "koratéra"],
+            [:Singular :Person3 :Fem "korattétta"],
+            [:Plural :Person1 :Common "korannnna"],
+            [:Plural :Person2 :Common "koratténta / korattéttan"],
             [:Plural :Person3 :Common "koraténran / koratéran"]]
     }
     {:label "bayso-VConj4AffPerfComp2-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :PerfectComp2}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "koraéwa"]
-            [:Singular :Person2 :Common "korattéwa"]
-            [:Singular :Person3 :Masc "koratéwa"]
-            [:Singular :Person3 :Fem "korattéwa"]
-            [:Plural :Person1 :Common "korannéwa"]
-            [:Plural :Person2 :Common "koratténwa"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :PerfectComp2}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "koraéwa"],
+            [:Singular :Person2 :Common "korattéwa"],
+            [:Singular :Person3 :Masc "koratéwa"],
+            [:Singular :Person3 :Fem "korattéwa"],
+            [:Plural :Person1 :Common "korannéwa"],
+            [:Plural :Person2 :Common "koratténwa"],
             [:Plural :Person3 :Common "koraténwa"]]
     }
     {:label "bayso-VConj4AffPerfPast-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :PrefectPast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "koraére"]
-            [:Singular :Person2 :Common "korattétte"]
-            [:Singular :Person3 :Masc "koratére"]
-            [:Singular :Person3 :Fem "korattétte"]
-            [:Plural :Person1 :Common "korannénne"]
-            [:Plural :Person2 :Common "koratténte(n)"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :PrefectPast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "koraére"],
+            [:Singular :Person2 :Common "korattétte"],
+            [:Singular :Person3 :Masc "koratére"],
+            [:Singular :Person3 :Fem "korattétte"],
+            [:Plural :Person1 :Common "korannénne"],
+            [:Plural :Person2 :Common "koratténte(n)"],
             [:Plural :Person3 :Common "koraténre(n)"]]
     }
     {:label "bayso-VConj4AffPerfSimple-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :PerfectSimple}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "koraé"]
-            [:Singular :Person2 :Common "koratté"]
-            [:Singular :Person3 :Masc "koraté"]
-            [:Singular :Person3 :Fem "koratté"]
-            [:Plural :Person1 :Common "koranné"]
-            [:Plural :Person2 :Common "korattén"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :PerfectSimple}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "koraé"],
+            [:Singular :Person2 :Common "koratté"],
+            [:Singular :Person3 :Masc "koraté"],
+            [:Singular :Person3 :Fem "koratté"],
+            [:Plural :Person1 :Common "koranné"],
+            [:Plural :Person2 :Common "korattén"],
             [:Plural :Person3 :Common "koratén"]]
     }
     {:label "bayso-VConj4NegDubPast-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :DubitativePast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko koráigira"]
-            [:Singular :Person2 :Common "lákko koráigitta"]
-            [:Singular :Person3 :Masc "lákko koráigira"]
-            [:Singular :Person3 :Fem "lákko koráigitta"]
-            [:Plural :Person1 :Common "lákko koráiginna"]
-            [:Plural :Person2 :Common "lákko koráigittan"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :DubitativePast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko koráigira"],
+            [:Singular :Person2 :Common "lákko koráigitta"],
+            [:Singular :Person3 :Masc "lákko koráigira"],
+            [:Singular :Person3 :Fem "lákko koráigitta"],
+            [:Plural :Person1 :Common "lákko koráiginna"],
+            [:Plural :Person2 :Common "lákko koráigittan"],
             [:Plural :Person3 :Common "lákko koráigiran"]]
     }
     {:label "bayso-VConj4NegFut1-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :Future1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko koráro"]
-            [:Singular :Person2 :Common "lákko korátto"]
-            [:Singular :Person3 :Masc "lákko koráro"]
-            [:Singular :Person3 :Fem "lákko korátto"]
-            [:Plural :Person1 :Common "lákko koránno"]
-            [:Plural :Person2 :Common "lákko koráttan"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :Future1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko koráro"],
+            [:Singular :Person2 :Common "lákko korátto"],
+            [:Singular :Person3 :Masc "lákko koráro"],
+            [:Singular :Person3 :Fem "lákko korátto"],
+            [:Plural :Person1 :Common "lákko koránno"],
+            [:Plural :Person2 :Common "lákko koráttan"],
             [:Plural :Person3 :Common "lákko koráran"]]
     }
     {:label "bayso-VConj4NegFutProx1-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :FutureProximate1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko koráingira"]
-            [:Singular :Person2 :Common "lákko koráingitta"]
-            [:Singular :Person3 :Masc "lákko koráingira"]
-            [:Singular :Person3 :Fem "lákko koráingitta"]
-            [:Plural :Person1 :Common "lákko koráinginna"]
-            [:Plural :Person2 :Common "lákko koráingittan"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :FutureProximate1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko koráingira"],
+            [:Singular :Person2 :Common "lákko koráingitta"],
+            [:Singular :Person3 :Masc "lákko koráingira"],
+            [:Singular :Person3 :Fem "lákko koráingitta"],
+            [:Plural :Person1 :Common "lákko koráinginna"],
+            [:Plural :Person2 :Common "lákko koráingittan"],
             [:Plural :Person3 :Common "lákko koráingiran"]]
     }
     {:label "bayso-VConj4NegFutProx2-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :FutureProximate2}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko koráinaro"]
-            [:Singular :Person2 :Common "lákko koráinatto"]
-            [:Singular :Person3 :Masc "lákko koráinaro"]
-            [:Singular :Person3 :Fem "lákko koráinatto"]
-            [:Plural :Person1 :Common "lákko koráinanno"]
-            [:Plural :Person2 :Common "lákko koráinattan"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :FutureProximate2}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko koráinaro"],
+            [:Singular :Person2 :Common "lákko koráinatto"],
+            [:Singular :Person3 :Masc "lákko koráinaro"],
+            [:Singular :Person3 :Fem "lákko koráinatto"],
+            [:Plural :Person1 :Common "lákko koráinanno"],
+            [:Plural :Person2 :Common "lákko koráinattan"],
             [:Plural :Person3 :Common "lákko koráinaran"]]
     }
     {:label "bayso-VConj4NegImperfPast-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :ImperfectPast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko koráinare"]
-            [:Singular :Person2 :Common "lákko koráinatte"]
-            [:Singular :Person3 :Masc "lákko koráinare"]
-            [:Singular :Person3 :Fem "lákko koráinatte"]
-            [:Plural :Person1 :Common "lákko koráinanne"]
-            [:Plural :Person2 :Common "lákko koráinatten"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :ImperfectPast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko koráinare"],
+            [:Singular :Person2 :Common "lákko koráinatte"],
+            [:Singular :Person3 :Masc "lákko koráinare"],
+            [:Singular :Person3 :Fem "lákko koráinatte"],
+            [:Plural :Person1 :Common "lákko koráinanne"],
+            [:Plural :Person2 :Common "lákko koráinatten"],
             [:Plural :Person3 :Common "lákko koráinaren"]]
     }
     {:label "bayso-VConj4NegImperfPres-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :ImperfectPresent}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko koratáagira"]
-            [:Singular :Person2 :Common "lákko koratáagitta"]
-            [:Singular :Person3 :Masc "lákko koratáagira"]
-            [:Singular :Person3 :Fem "lákko koratáagitta"]
-            [:Plural :Person1 :Common "lákko koratáaginna"]
-            [:Plural :Person2 :Common "lákko koratáagittan"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :ImperfectPresent}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko koratáagira"],
+            [:Singular :Person2 :Common "lákko koratáagitta"],
+            [:Singular :Person3 :Masc "lákko koratáagira"],
+            [:Singular :Person3 :Fem "lákko koratáagitta"],
+            [:Plural :Person1 :Common "lákko koratáaginna"],
+            [:Plural :Person2 :Common "lákko koratáagittan"],
             [:Plural :Person3 :Common "lákko koratáagiran"]]
     }
     {:label "bayso-VConj4NegImperfSimple-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :ImperfectSimple}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko koráa"]
-            [:Singular :Person2 :Common "lákko korattá"]
-            [:Singular :Person3 :Masc "lákko koratá"]
-            [:Singular :Person3 :Fem "lákko korattá"]
-            [:Plural :Person1 :Common "lákko koranná"]
-            [:Plural :Person2 :Common "lákko korattán"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :ImperfectSimple}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko koráa"],
+            [:Singular :Person2 :Common "lákko korattá"],
+            [:Singular :Person3 :Masc "lákko koratá"],
+            [:Singular :Person3 :Fem "lákko korattá"],
+            [:Plural :Person1 :Common "lákko koranná"],
+            [:Plural :Person2 :Common "lákko korattán"],
             [:Plural :Person3 :Common "lákko koratán"]]
     }
     {:label "bayso-VConj4NegImprtv-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :gender :Common,
-            :lexeme :kor,
-            :person :Person2,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :Imperative}
-    :terms [[:number :token] ;; schema
-            [:Singular "aro´ koratté"]
+             :conjSubClass :Conjugation4,
+             :gender :Common,
+             :lexeme :kor,
+             :person :Person2,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :Imperative}
+    :terms [[:number :token],
+            [:Singular "aro´ koratté"],
             [:Plural "aro´ korattén"]]
     }
     {:label "bayso-VConj4NegJussive-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :gender :Common,
-            :lexeme :kor,
-            :person :Neutral,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :Jussive}
-    :terms [[:token] ;; schema
+             :conjSubClass :Conjugation4,
+             :gender :Common,
+             :lexeme :kor,
+             :person :Neutral,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :Jussive}
+    :terms [[:token],
             ["aro´ koranno´"]]
     }
     {:label "bayso-VConj4NegPerfComp1-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :PerfectComp1}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko koraéra"]
-            [:Singular :Person2 :Common "lákko korattétta"]
-            [:Singular :Person3 :Masc "lákko koratéra"]
-            [:Singular :Person3 :Fem "lákko korattétta"]
-            [:Plural :Person1 :Common "lákko korannnna"]
-            [:Plural :Person2 :Common "lákko korattnta / lá korattéttan"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :PerfectComp1}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko koraéra"],
+            [:Singular :Person2 :Common "lákko korattétta"],
+            [:Singular :Person3 :Masc "lákko koratéra"],
+            [:Singular :Person3 :Fem "lákko korattétta"],
+            [:Plural :Person1 :Common "lákko korannnna"],
+            [:Plural :Person2 :Common "lákko korattnta / lá korattéttan"],
             [:Plural :Person3 :Common "lákko koraténran / lá koratéran"]]
     }
     {:label "bayso-VConj4NegPerfPast-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :PrefectPast}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko koraére"]
-            [:Singular :Person2 :Common "lákko korattétte"]
-            [:Singular :Person3 :Masc "lákko koratére"]
-            [:Singular :Person3 :Fem "lákko korattétte"]
-            [:Plural :Person1 :Common "lákko korannénne"]
-            [:Plural :Person2 :Common "lákko koratténte(n)"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :PrefectPast}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko koraére"],
+            [:Singular :Person2 :Common "lákko korattétte"],
+            [:Singular :Person3 :Masc "lákko koratére"],
+            [:Singular :Person3 :Fem "lákko korattétte"],
+            [:Plural :Person1 :Common "lákko korannénne"],
+            [:Plural :Person2 :Common "lákko koratténte(n)"],
             [:Plural :Person3 :Common "lákko koraténre(n)"]]
     }
     {:label "bayso-VConj4NegPerfSimple-kor"
+    :pdgmType :Finite
     :common {:conjClass :Suffix,
-            :conjSubClass :Conjugation4,
-            :lexeme :kor,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :PerfectSimple}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "lákko koraé"]
-            [:Singular :Person2 :Common "lákko koratté"]
-            [:Singular :Person3 :Masc "lákko koraté"]
-            [:Singular :Person3 :Fem "lákko koratté"]
-            [:Plural :Person1 :Common "lákko koranné"]
-            [:Plural :Person2 :Common "lákko korattén"]
+             :conjSubClass :Conjugation4,
+             :lexeme :kor,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :PerfectSimple}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "lákko koraé"],
+            [:Singular :Person2 :Common "lákko koratté"],
+            [:Singular :Person3 :Masc "lákko koraté"],
+            [:Singular :Person3 :Fem "lákko koratté"],
+            [:Plural :Person1 :Common "lákko koranné"],
+            [:Plural :Person2 :Common "lákko korattén"],
             [:Plural :Person3 :Common "lákko koratén"]]
     }
     {:label "bayso-VStems"
+    :pdgmType :TnsAspModStem
     :common {:lexeme :dub,
-            :pos :Verb,
-            :formType :Stem,
-            :morphClass :TnsAspModStem}
-    :terms [[:tam :tamStemForm :token] ;; schema
-            [:Future :Proximal "dubin-"]
-            [:Past :Dubitative "dubi-"]
-            [:Past :Imperfect "dubin-"]
+             :pos :Verb,
+             :formType :Stem,
+             :morphClass :TnsAspModStem}
+    :terms [[:tam :tamStemForm :token],
+            [:Future :Proximal "dubin-"],
+            [:Past :Dubitative "dubi-"],
+            [:Past :Imperfect "dubin-"],
             [:Present :Imperfect "dubaa-"]]
     }
 ]
 :muterms [
     {:label "bayso-PIndep"
+    :pdgmType :NA
     :common {:morpheme :PRO,
-            :pos :Pronoun,
-            :proClass :Independent}
-    :terms [[:case :number :person :gender :token] ;; schema
-            [:Object :Singular :Person1 :Common "in"]
-            [:Object :Singular :Person2 :Common "ku"]
-            [:ObjectIndirect :Singular :Person1 :Common "iin"]
-            [:ObjectIndirect :Singular :Person2 :Common "kuun"]
-            [:ObjectIndirect :Singular :Person3 :Masc "usuun"]
-            [:ObjectIndirect :Singular :Person3 :Fem "eseen"]
-            [:ObjectIndirect :Plural :Person1 :Common "noon"]
-            [:ObjectIndirect :Plural :Person2 :Common "isinun"]
-            [:ObjectIndirect :Plural :Person3 :Common "isoon"]
-            [:Subject :Singular :Person1 :Common "áni"]
-            [:Subject :Singular :Person2 :Common "áti"]
-            [:Subject :Singular :Person3 :Masc "úsu"]
-            [:Subject :Singular :Person3 :Fem "èse"]
-            [:Subject :Plural :Person1 :Common "no"]
-            [:Subject :Plural :Person2 :Common "ísin"]
+             :pos :Pronoun,
+             :proClass :Independent}
+    :terms [[:case :number :person :gender :token],
+            [:Object :Singular :Person1 :Common "in"],
+            [:Object :Singular :Person2 :Common "ku"],
+            [:ObjectIndirect :Singular :Person1 :Common "iin"],
+            [:ObjectIndirect :Singular :Person2 :Common "kuun"],
+            [:ObjectIndirect :Singular :Person3 :Masc "usuun"],
+            [:ObjectIndirect :Singular :Person3 :Fem "eseen"],
+            [:ObjectIndirect :Plural :Person1 :Common "noon"],
+            [:ObjectIndirect :Plural :Person2 :Common "isinun"],
+            [:ObjectIndirect :Plural :Person3 :Common "isoon"],
+            [:Subject :Singular :Person1 :Common "áni"],
+            [:Subject :Singular :Person2 :Common "áti"],
+            [:Subject :Singular :Person3 :Masc "úsu"],
+            [:Subject :Singular :Person3 :Fem "èse"],
+            [:Subject :Plural :Person1 :Common "no"],
+            [:Subject :Plural :Person2 :Common "ísin"],
             [:Subject :Plural :Person3 :Common "ísin"]]
     }
     {:label "bayso-VAffPastCopula"
+    :pdgmType :Copula
     :common {:morpheme :COPULA,
-            :conjClass :Prefix,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Past,
-            :morphClass :Copula}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "-ya"]
-            [:Singular :Person2 :Common "-te"]
-            [:Singular :Person3 :Masc "-ye"]
-            [:Singular :Person3 :Fem "-te"]
-            [:Plural :Person1 :Common "-ne"]
-            [:Plural :Person2 :Common "-ten"]
+             :conjClass :Prefix,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Past,
+             :morphClass :Copula}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "-ya"],
+            [:Singular :Person2 :Common "-te"],
+            [:Singular :Person3 :Masc "-ye"],
+            [:Singular :Person3 :Fem "-te"],
+            [:Plural :Person1 :Common "-ne"],
+            [:Plural :Person2 :Common "-ten"],
             [:Plural :Person3 :Common "-yen"]]
     }
     {:label "bayso-VAffPresentCopula"
+    :pdgmType :Copula
     :common {:morpheme :COPULA,
-            :conjClass :Prefix,
-            :polarity :Affirmative,
-            :pos :Verb,
-            :tam :Present,
-            :morphClass :Copula}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "-ya"]
-            [:Singular :Person2 :Common "-ta"]
-            [:Singular :Person3 :Masc "-ya"]
-            [:Singular :Person3 :Fem "-ta"]
-            [:Plural :Person1 :Common "-na"]
-            [:Plural :Person2 :Common "-tan"]
+             :conjClass :Prefix,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Present,
+             :morphClass :Copula}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "-ya"],
+            [:Singular :Person2 :Common "-ta"],
+            [:Singular :Person3 :Masc "-ya"],
+            [:Singular :Person3 :Fem "-ta"],
+            [:Plural :Person1 :Common "-na"],
+            [:Plural :Person2 :Common "-tan"],
             [:Plural :Person3 :Common "-yan"]]
     }
     {:label "bayso-VNegPresentCopula"
+    :pdgmType :Copula
     :common {:morpheme :COPULA,
-            :conjClass :Prefix,
-            :polarity :Negative,
-            :pos :Verb,
-            :tam :Present,
-            :morphClass :Copula}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "-yo"]
-            [:Singular :Person2 :Common "-to"]
-            [:Singular :Person3 :Masc "-yo"]
-            [:Singular :Person3 :Fem "-to"]
-            [:Plural :Person1 :Common "-no"]
-            [:Plural :Person2 :Common "-tan"]
+             :conjClass :Prefix,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :Present,
+             :morphClass :Copula}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "-yo"],
+            [:Singular :Person2 :Common "-to"],
+            [:Singular :Person3 :Masc "-yo"],
+            [:Singular :Person3 :Fem "-to"],
+            [:Plural :Person1 :Common "-no"],
+            [:Plural :Person2 :Common "-tan"],
             [:Plural :Person3 :Common "-yan"]]
     }
     {:label "bayso-VPersAspSuff"
+    :pdgmType :PersSuff
     :common {:morpheme :PERSSUFF,
-            :pos :Verb,
-            :morphClass :PersSuff}
-    :terms [[:number :person :gender :token] ;; schema
-            [:Singular :Person1 :Common "-V"]
-            [:Singular :Person2 :Common "-tV"]
-            [:Singular :Person3 :Masc "-V"]
-            [:Singular :Person3 :Fem "-tV"]
-            [:Plural :Person1 :Common "-nV"]
-            [:Plural :Person2 :Common "-tVn"]
+             :pos :Verb,
+             :morphClass :PersSuff}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "-V"],
+            [:Singular :Person2 :Common "-tV"],
+            [:Singular :Person3 :Masc "-V"],
+            [:Singular :Person3 :Fem "-tV"],
+            [:Plural :Person1 :Common "-nV"],
+            [:Plural :Person2 :Common "-tVn"],
             [:Plural :Person3 :Common "-Vn"]]
     }
 ]
 }
+ 
+ 
