@@ -6,7 +6,8 @@
 :datasourceNotes "Note that all verbs are Suffix conjugation, except for the very marginal case of the encliticized Copula."
 :geodemoURL "http://www.ethnologue.com/language/bsw"
 :geodemoTXT "Representing the northern branch of the Omo-Tana language sub-family, Bayso is spoken in villages in the vicinity of, and islands in Lake Abaya."
- :schemata {:case [:Object  :ObjectIndirect :Subject],
+ :schemata {:vmorphClass [:PersSuff  :TnsAspModStem :CopulaNegSuff :CopulaSuff],
+            :case [:Object :ObjectIndirect :Subject],
             :conjClass [:Prefix :Suffix],
             :conjSubClass [:Conjugation1 :Conjugation2 :Conjugation3 :Conjugation4],
             :formType [:Stem],
@@ -20,7 +21,7 @@
             :proClass [:Independent :Possessive],
             :tam [:DubitativePast :Future :Future1 :Future2 :Future3 :FutureProximate1 :FutureProximate2 :Imperative :ImperfectComp :ImperfectGeneral :ImperfectPast :ImperfectPresent :ImperfectSimple :Jussive :Past :PerfectComp1 :PerfectComp2 :PerfectSimple :PrefectPast :Present],
             :tamStemForm [:Dubitative :Imperfect :Proximal]
-            :pdgmType [:Copula :Finite :PersSuff :TnsAspModStem :PRO]}
+            :pdgmType [:Finite :PRO :VOther]} 
 :pclass {:pngClass [:person :number :gender :genderPoss :numPoss],
           :synsemClass [:case :derivedStemAug :polarity :pos :proClass :tam :tamStemForm],
           :inflClass [:conjSubClass],
@@ -1868,8 +1869,9 @@
             [:Plural :Person3 :Common "lákko koratén"]]
     }
     {:label "bayso-VStems"
-    :pdgmType :TnsAspModStem
-    :common {:lexeme :dub,
+    :pdgmType :VOther
+    :common {:vmorphClass :TnsAspModStem
+             :lexeme :dub,
              :pos :Verb,
              :formType :Stem,
              }
@@ -1904,8 +1906,9 @@
             [:Subject :Plural :Person3 :Common "ísin"]]
     }
     {:label "bayso-VAffPastCopula"
-    :pdgmType :Copula
-    :common {:lexeme :COPULA,
+    :pdgmType :VOther
+    :common {:vmorphClass :CopulaSuff
+             :lexeme :COPULA,
              :conjClass :Prefix,
              :polarity :Affirmative,
              :pos :Verb,
@@ -1921,8 +1924,9 @@
             [:Plural :Person3 :Common "-yen"]]
     }
     {:label "bayso-VAffPresentCopula"
-    :pdgmType :Copula
-    :common {:lexeme :COPULA,
+    :pdgmType :VOther
+    :common {:vmorphClass :CopulaSuff
+             :lexeme :COPULA,
              :conjClass :Prefix,
              :polarity :Affirmative,
              :pos :Verb,
@@ -1938,8 +1942,9 @@
             [:Plural :Person3 :Common "-yan"]]
     }
     {:label "bayso-VNegPresentCopula"
-    :pdgmType :Copula
-    :common {:lexeme :COPULA,
+    :pdgmType :VOther
+    :common {:vmorphClass :CopulaNegSuff
+             :lexeme :COPULA,
              :conjClass :Prefix,
              :polarity :Negative,
              :pos :Verb,
@@ -1955,8 +1960,9 @@
             [:Plural :Person3 :Common "-yan"]]
     }
     {:label "bayso-VPersAspSuff"
-    :pdgmType :PersSuff
-    :common {:pos :Verb,
+    :pdgmType :VOther
+    :common {:vmorphClass :PersSuff
+             :pos :Verb,
              }
     :terms [[:number :person :gender :token],
             [:Singular :Person1 :Common "-V"],
