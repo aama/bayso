@@ -6,22 +6,24 @@
  :datasourceNotes "Note that all verbs are Suffix conjugation, except for the very marginal case of the encliticized Copula."
  :geodemoURL "http://www.ethnologue.com/language/bsw"
  :geodemoTXT "Representing the northern branch of the Omo-Tana language sub-family, Bayso is spoken in villages in the vicinity of, and islands in Lake Abaya."
-:schemata {:case [:Object :ObjectIndirect :Subject],
-           :conjClass [:Prefix :Suffix],
-           :conjSubClass [:Conjugation1 :Conjugation2 :Conjugation3 :Conjugation4],
-           :formType [:Stem],
-           :gender [:Common :Fem :Masc],
-           :genderPoss [:P_Common :P_Fem :P_Masc],
-           :numPoss [:P_Plural :P_Singular],
-           :number [:Plural :Singular],
-           :person [:Neutral :Person1 :Person2 :Person3],
-           :polarity [:Affirmative :Negative],
-           :pos [:Pronoun :Verb],
-           :proClass [:Independent :Possessive],
-           :tam [:DubitativePast :Future :Future1 :Future2 :Future3 :FutureProximate1 :FutureProximate2 :Imperative :ImperfectComp :ImperfectGeneral :ImperfectPast :ImperfectPresent :ImperfectSimple :Jussive :Past :PerfectComp1 :PerfectComp2 :PerfectSimple :PrefectPast :Present],
-           :tamStemForm [:Dubitative :Imperfect :Proximal],
-           :vmorphClass [:Finite :CopulaNegSuff :CopulaSuff :PersSuff :TnsAspModStem]
-           }
+:schemata { :pmorphClass [:ProMorph],
+ :lexeme [:kor :seg :COPULA  :dee :dub],
+ :case [:Object :ObjectIndirect :Subject],
+ :conjClass [:Prefix :Suffix],
+ :conjSubClass [:Conjugation1 :Conjugation2 :Conjugation3 :Conjugation4],
+ :formType [:Stem],
+ :gender [:Common :Fem :Masc],
+ :genderPoss [:P_Common :P_Fem :P_Masc],
+ :numPoss [:P_Plural :P_Singular],
+ :number [:Plural :Singular],
+ :person [:Neutral :Person1 :Person2 :Person3],
+ :polarity [:Affirmative :Negative],
+ :pos [:Pronoun :Verb],
+ :proClass [:Independent :Possessive],
+ :tam [:DubitativePast :Future :Future1 :Future2 :Future3 :FutureProximate1 :FutureProximate2 :Imperative :ImperfectComp :ImperfectGeneral :ImperfectPast :ImperfectPresent :ImperfectSimple :Jussive :Past :PerfectComp1 :PerfectComp2 :PerfectSimple :PrefectPast :Present],
+ :tamStemForm [:Dubitative :Imperfect :Proximal],
+ :vmorphClass [:CopulaNegSuff :CopulaSuff :Finite :PersSuff :TnsAspModStem]
+ }
  :pclass {:pngClass [:person :number :gender :genderPoss :numPoss],
           :synsemClass [:case :derivedStemAug :polarity :pos :proClass :tam :tamStemForm],
           :inflClass [:conjSubClass],
@@ -33,8 +35,7 @@
           :COPULA {:conjSubClass :Conjugation2, :gloss "_NULL", :lemma "COPULA", :pos :Verb}}
  :termclusters [
                 {:label "bayso-PPoss"
-                 :common {:lexeme :PRO,
-                          :pos :Pronoun,
+                 :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :Possessive}
                  :terms [[:genderPoss :numPoss :number :person :gender :token],
                          [:P_Common :P_Plural :Singular :Person1 :Common "o tee"],
@@ -1877,7 +1878,7 @@
                          [:Present :Imperfect "dubaa-"]]
                  }
                 {:label "bayso-PIndep"
-                 :common {:pos :Pronoun,
+                 :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :Independent}
                  :terms [[:case :number :person :gender :token],
                          [:Object :Singular :Person1 :Common "in"],
