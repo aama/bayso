@@ -7,7 +7,6 @@
  :geodemoURL "http://www.ethnologue.com/language/bsw"
  :geodemoTXT "Representing the northern branch of the Omo-Tana language sub-family, Bayso is spoken in villages in the vicinity of, and islands in Lake Abaya."
 :schemata { :pmorphClass [:ProMorph],
- :lexeme [:kor :seg :COPULA  :dee :dub],
  :case [:Object :ObjectIndirect :Subject],
  :conjClass [:Prefix :Suffix],
  :conjSubClass [:Conjugation1 :Conjugation2 :Conjugation3 :Conjugation4],
@@ -28,11 +27,13 @@
           :synsemClass [:case :derivedStemAug :polarity :pos :proClass :tam :tamStemForm],
           :inflClass [:conjSubClass],
           :otherClass []}
- :lexemes{:dee {:conjSubClass :Conjugation3, :gloss "_NULL", :lemma "dee", :pos :Verb},
-          :dub {:conjSubClass :Conjugation1, :gloss "_NULL", :lemma "dub", :pos :Verb},
-          :kor {:conjSubClass :Conjugation4, :gloss "_NULL", :lemma "kor", :pos :Verb},
-          :seg {:conjSubClass :Conjugation2, :gloss "_NULL", :lemma "seg", :pos :Verb}
-          :COPULA {:conjSubClass :Conjugation2, :gloss "_NULL", :lemma "COPULA", :pos :Verb}}
+ :lexemes {
+:COPULA   {:pos :Verb, :lemma "COPULA", :gloss "_NULL", :conjSubClass :Conjugation2},
+:dee   {:pos :Verb, :lemma "dee", :gloss "_NULL", :conjSubClass :Conjugation3},
+:dub   {:pos :Verb, :lemma "dub", :gloss "_NULL", :conjSubClass :Conjugation1},
+:kor   {:pos :Verb, :lemma "kor", :gloss "_NULL", :conjSubClass :Conjugation4},
+:seg   {:pos :Verb, :lemma "seg", :gloss "_NULL", :conjSubClass :Conjugation2},
+}
  :termclusters [
                 {:label "bayso-PPoss"
                  :common {:pos :Pronoun, :pmorphClass :ProMorph,
