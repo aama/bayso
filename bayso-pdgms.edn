@@ -2,40 +2,41 @@
  :lang :bayso
  :subfamily "Lowland East Cushitic Omo-Tana"
  :sgpref "bay"
- :datasource "Hayward1978 Hayward1979"
+ :datasource "Hayward1978a Hayward1979; abbrev H78p.NNNH79p.NNN"
  :datasourceNotes "Note that all verbs are Suffix conjugation, except for the very marginal case of the encliticized Copula."
  :geodemoURL "http://www.ethnologue.com/language/bsw"
  :geodemoTXT "Representing the northern branch of the Omo-Tana language sub-family, Bayso is spoken in villages in the vicinity of, and islands in Lake Abaya."
-:schemata { :pmorphClass [:ProMorph],
- :case [:Object :ObjectIndirect :Subject],
- :conjClass [:Prefix :Suffix],
- :conjSubClass [:Conjugation1 :Conjugation2 :Conjugation3 :Conjugation4],
- :formType [:Stem],
- :gender [:Common :Fem :Masc],
- :genderPoss [:P_Common :P_Fem :P_Masc],
- :numPoss [:P_Plural :P_Singular],
- :number [:Plural :Singular],
- :person [:Neutral :Person1 :Person2 :Person3],
- :polarity [:Affirmative :Negative],
- :pos [:Pronoun :Verb],
- :proClass [:Independent :Possessive],
- :tam [:DubitativePast :Future :Future1 :Future2 :Future3 :FutureProximate1 :FutureProximate2 :Imperative :ImperfectComp :ImperfectGeneral :ImperfectPast :ImperfectPresent :ImperfectSimple :Jussive :Past :PerfectComp1 :PerfectComp2 :PerfectSimple :PrefectPast :Present],
- :tamStemForm [:Dubitative :Imperfect :Proximal],
- :vmorphClass [:CopulaNegSuff :CopulaSuff :Finite :PersSuff :TnsAspModStem]
- }
+ :schemata { :pmorphClass [:ProMorph],
+            :case [:Object :ObjectIndirect :Subject],
+            :conjClass [:Prefix :Suffix],
+            :conjSubClass [:Conjugation1 :Conjugation2 :Conjugation3 :Conjugation4],
+            :formType [:Stem],
+            :gender [:Common :Fem :Masc],
+            :genderPoss [:P_Common :P_Fem :P_Masc],
+            :numPoss [:P_Plural :P_Singular],
+            :number [:Plural :Singular],
+            :person [:Neutral :Person1 :Person2 :Person3],
+            :polarity [:Affirmative :Negative],
+            :pos [:Pronoun :Verb],
+            :proClass [:Independent :Possessive],
+            :tam [:DubitativePast :Future :Future1 :Future2 :Future3 :FutureProximate1 :FutureProximate2 :Imperative :ImperfectComp :ImperfectGeneral :ImperfectPast :ImperfectPresent :ImperfectSimple :Jussive :Past :PerfectComp1 :PerfectComp2 :PerfectSimple :PrefectPast :Present],
+            :tamStemForm [:Dubitative :Imperfect :Proximal],
+            :vmorphClass [:CopulaNegSuff :CopulaSuff :Finite :PersSuff :TnsAspModStem]
+            }
  :pclass {:pngClass [:person :number :gender :genderPoss :numPoss],
           :synsemClass [:case :derivedStemAug :polarity :pos :proClass :tam :tamStemForm],
           :inflClass [:conjSubClass],
           :otherClass []}
  :lexemes {
-:COPULA   {:pos :Verb, :lemma "COPULA", :gloss "_NULL", :conjSubClass :Conjugation2},
-:dee   {:pos :Verb, :lemma "dee", :gloss "_NULL", :conjSubClass :Conjugation3},
-:dub   {:pos :Verb, :lemma "dub", :gloss "_NULL", :conjSubClass :Conjugation1},
-:kor   {:pos :Verb, :lemma "kor", :gloss "_NULL", :conjSubClass :Conjugation4},
-:seg   {:pos :Verb, :lemma "seg", :gloss "_NULL", :conjSubClass :Conjugation2},
-}
+           :COPULA   {:pos :Verb, :lemma "COPULA", :gloss "_NULL", :conjSubClass :Conjugation2},
+           :dee   {:pos :Verb, :lemma "dee", :gloss "_NULL", :conjSubClass :Conjugation3},
+           :dub   {:pos :Verb, :lemma "dub", :gloss "_NULL", :conjSubClass :Conjugation1},
+           :kor   {:pos :Verb, :lemma "kor", :gloss "_NULL", :conjSubClass :Conjugation4},
+           :seg   {:pos :Verb, :lemma "seg", :gloss "_NULL", :conjSubClass :Conjugation2},
+           }
  :termclusters [
                 {:label "bayso-PPoss"
+                 :note "H78p.H79p."
                  :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :Possessive}
                  :terms [[:genderPoss :numPoss :number :person :gender :token],
@@ -62,6 +63,7 @@
                          [:P_Masc :P_Singular :Plural :Person3 :Common "ka kisoo "]]
                  }
                 {:label "bayso-VConj1AffDubPast-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -79,6 +81,7 @@
                          [:Plural :Person3 :Common "dúbigiran"]]
                  }
                 {:label "bayso-VConj1AffFut1-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -96,6 +99,7 @@
                          [:Plural :Person3 :Common "dubirán"]]
                  }
                 {:label "bayso-VConj1AffFut2-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -113,6 +117,7 @@
                          [:Plural :Person3 :Common "dubiránwa"]]
                  }
                 {:label "bayso-VConj1AffFut3-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -130,6 +135,7 @@
                          [:Plural :Person3 :Common "dúbinaran"]]
                  }
                 {:label "bayso-VConj1AffFutProx1-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -147,6 +153,7 @@
                          [:Plural :Person3 :Common "dúbingiran"]]
                  }
                 {:label "bayso-VConj1AffFutProx2-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -164,6 +171,7 @@
                          [:Plural :Person3 :Common "dúbinaran"]]
                  }
                 {:label "bayso-VConj1AffImperfComp-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -181,6 +189,7 @@
                          [:Plural :Person3 :Common "dubáran"]]
                  }
                 {:label "bayso-VConj1AffImperfPast-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -198,6 +207,7 @@
                          [:Plural :Person3 :Common "dúbinaren"]]
                  }
                 {:label "bayso-VConj1AffImperfPres-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -215,6 +225,7 @@
                          [:Plural :Person3 :Common "dubáagiran"]]
                  }
                 {:label "bayso-VConj1AffImperfSimple-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -232,6 +243,7 @@
                          [:Plural :Person3 :Common "dubán"]]
                  }
                 {:label "bayso-VConj1AffImprtv-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -246,6 +258,7 @@
                          [:Plural "dubá"]]
                  }
                 {:label "bayso-VConj1AffJussive-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -260,6 +273,7 @@
                          [:Plural :Common "há dube(e)n"]]
                  }
                 {:label "bayso-VConj1AffPerfComp1-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -277,6 +291,7 @@
                          [:Plural :Person3 :Common "dubènran / dubèran"]]
                  }
                 {:label "bayso-VConj1AffPerfComp2-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -294,6 +309,7 @@
                          [:Plural :Person3 :Common "dubènwa"]]
                  }
                 {:label "bayso-VConj1AffPerfPast-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -311,6 +327,7 @@
                          [:Plural :Person3 :Common "dubènre(n)"]]
                  }
                 {:label "bayso-VConj1AffPerfSimple-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -328,6 +345,7 @@
                          [:Plural :Person3 :Common "dubèn"]]
                  }
                 {:label "bayso-VConj1NegDubPast-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -345,6 +363,7 @@
                          [:Plural :Person3 :Common "lákko dúbigiran"]]
                  }
                 {:label "bayso-VConj1NegFut1-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -362,6 +381,7 @@
                          [:Plural :Person3 :Common "lákko dubirán"]]
                  }
                 {:label "bayso-VConj1NegFutProx1-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -379,6 +399,7 @@
                          [:Plural :Person3 :Common "lákko dúbingiran"]]
                  }
                 {:label "bayso-VConj1NegFutProx2-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -396,6 +417,7 @@
                          [:Plural :Person3 :Common "lákko dúbinaran"]]
                  }
                 {:label "bayso-VConj1NegImperfGen-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -413,6 +435,7 @@
                          [:Plural :Person3 :Common "lákko dubáran"]]
                  }
                 {:label "bayso-VConj1NegImperfPast-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -430,6 +453,7 @@
                          [:Plural :Person3 :Common "lákko dúbinaren"]]
                  }
                 {:label "bayso-VConj1NegImperfPres-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -447,6 +471,7 @@
                          [:Plural :Person3 :Common "lákko dubáagiran"]]
                  }
                 {:label "bayso-VConj1NegImperfSimple-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -464,6 +489,7 @@
                          [:Plural :Person3 :Common "lákko dubán"]]
                  }
                 {:label "bayso-VConj1NegImprtv-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -478,6 +504,7 @@
                          [:Plural "aro´ dubtén"]]
                  }
                 {:label "bayso-VConj1NegJussive-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -491,6 +518,7 @@
                          ["aro´ dubo´"]]
                  }
                 {:label "bayso-VConj1NegPerfComp1-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -508,6 +536,7 @@
                          [:Plural :Person3 :Common "lákko dubénran / lá dubéran"]]
                  }
                 {:label "bayso-VConj1NegPerfPast-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -525,6 +554,7 @@
                          [:Plural :Person3 :Common "lákko dubénre(n)"]]
                  }
                 {:label "bayso-VConj1NegPerfSimple-dub"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation1,
@@ -542,6 +572,7 @@
                          [:Plural :Person3 :Common "lákko dubén"]]
                  }
                 {:label "bayso-VConj2AffDubPast-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -559,6 +590,7 @@
                          [:Plural :Person3 :Common "segíigiran"]]
                  }
                 {:label "bayso-VConj2AffFut1-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -576,6 +608,7 @@
                          [:Plural :Person3 :Common "segíiran"]]
                  }
                 {:label "bayso-VConj2AffFut2-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -593,6 +626,7 @@
                          [:Plural :Person3 :Common "segiiránwa"]]
                  }
                 {:label "bayso-VConj2AffFut3-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -610,6 +644,7 @@
                          [:Plural :Person3 :Common "segíinaran"]]
                  }
                 {:label "bayso-VConj2AffFutProx1-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -627,6 +662,7 @@
                          [:Plural :Person3 :Common "segíingiran"]]
                  }
                 {:label "bayso-VConj2AffFutProx2-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -644,6 +680,7 @@
                          [:Plural :Person3 :Common "segíinaran"]]
                  }
                 {:label "bayso-VConj2AffImperfComp-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -661,6 +698,7 @@
                          [:Plural :Person3 :Common "segáaran"]]
                  }
                 {:label "bayso-VConj2AffImperfPast-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -678,6 +716,7 @@
                          [:Plural :Person3 :Common "segíinaren"]]
                  }
                 {:label "bayso-VConj2AffImperfPres-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -695,6 +734,7 @@
                          [:Plural :Person3 :Common "segagiran"]]
                  }
                 {:label "bayso-VConj2AffImperfSimple-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -712,6 +752,7 @@
                          [:Plural :Person3 :Common "koratán"]]
                  }
                 {:label "bayso-VConj2AffImprtv-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -726,6 +767,7 @@
                          [:Plural "segáa"]]
                  }
                 {:label "bayso-VConj2AffJussive-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -740,6 +782,7 @@
                          [:Plural :Common "há sege(e)n"]]
                  }
                 {:label "bayso-VConj2AffPerfComp1-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -757,6 +800,7 @@
                          [:Plural :Person3 :Common "segiiténta / segéeran"]]
                  }
                 {:label "bayso-VConj2AffPerfComp2-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -774,6 +818,7 @@
                          [:Plural :Person3 :Common "segéenwa"]]
                  }
                 {:label "bayso-VConj2AffPerfPast-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -791,6 +836,7 @@
                          [:Plural :Person3 :Common "segéenre(n) / segéeren"]]
                  }
                 {:label "bayso-VConj2AffPerfSimple-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -808,6 +854,7 @@
                          [:Plural :Person3 :Common "segéen"]]
                  }
                 {:label "bayso-VConj2NegDubPast-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -825,6 +872,7 @@
                          [:Plural :Person3 :Common "lákko segíigiran"]]
                  }
                 {:label "bayso-VConj2NegFut1-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -842,6 +890,7 @@
                          [:Plural :Person3 :Common "lákko segíiran"]]
                  }
                 {:label "bayso-VConj2NegFutProx1-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -859,6 +908,7 @@
                          [:Plural :Person3 :Common "lákko segíingiran"]]
                  }
                 {:label "bayso-VConj2NegFutProx2-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -876,6 +926,7 @@
                          [:Plural :Person3 :Common "lákko segíinaran"]]
                  }
                 {:label "bayso-VConj2NegImperfPast-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -893,6 +944,7 @@
                          [:Plural :Person3 :Common "lákko segíinaren"]]
                  }
                 {:label "bayso-VConj2NegImperfPres-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -910,6 +962,7 @@
                          [:Plural :Person3 :Common "lákko segagiran"]]
                  }
                 {:label "bayso-VConj2NegImperfSimple-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -927,6 +980,7 @@
                          [:Plural :Person3 :Common "lákko koratán"]]
                  }
                 {:label "bayso-VConj2NegImprtv-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -941,6 +995,7 @@
                          [:Plural "aro´ segiitén"]]
                  }
                 {:label "bayso-VConj2NegJussive-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -954,6 +1009,7 @@
                          ["aro´ sego´o"]]
                  }
                 {:label "bayso-VConj2NegPerfComp1-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -971,6 +1027,7 @@
                          [:Plural :Person3 :Common "lákko segiiténta / lá segéeran"]]
                  }
                 {:label "bayso-VConj2NegPerfPast-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -988,6 +1045,7 @@
                          [:Plural :Person3 :Common "lákko segéenre(n) / lá segéeren"]]
                  }
                 {:label "bayso-VConj2NegPerfSimple-seg"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation2,
@@ -1005,6 +1063,7 @@
                          [:Plural :Person3 :Common "lákko segéen"]]
                  }
                 {:label "bayso-VConj3AffDubPast-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1022,6 +1081,7 @@
                          [:Plural :Person3 :Common "díigiran"]]
                  }
                 {:label "bayso-VConj3AffFut1-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1039,6 +1099,7 @@
                          [:Plural :Person3 :Common "deerán"]]
                  }
                 {:label "bayso-VConj3AffFut2-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1056,6 +1117,7 @@
                          [:Plural :Person3 :Common "deeránwa"]]
                  }
                 {:label "bayso-VConj3AffFut3-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1073,6 +1135,7 @@
                          [:Plural :Person3 :Common "díinaran"]]
                  }
                 {:label "bayso-VConj3AffFutProx1-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1090,6 +1153,7 @@
                          [:Plural :Person3 :Common "díingiran"]]
                  }
                 {:label "bayso-VConj3AffFutProx2-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1107,6 +1171,7 @@
                          [:Plural :Person3 :Common "díianaran"]]
                  }
                 {:label "bayso-VConj3AffImperfComp-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1124,6 +1189,7 @@
                          [:Plural :Person3 :Common "dáaran"]]
                  }
                 {:label "bayso-VConj3AffImperfPast-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1141,6 +1207,7 @@
                          [:Plural :Person3 :Common "díinaren"]]
                  }
                 {:label "bayso-VConj3AffImperfPres-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1158,6 +1225,7 @@
                          [:Plural :Person3 :Common "diáagiran"]]
                  }
                 {:label "bayso-VConj3AffImprtv-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1172,6 +1240,7 @@
                          [:Plural "diá"]]
                  }
                 {:label "bayso-VConj3AffJussive-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1186,6 +1255,7 @@
                          [:Plural :Common "há de(e)n"]]
                  }
                 {:label "bayso-VConj3AffPerfComp1-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1203,6 +1273,7 @@
                          [:Plural :Person3 :Common "déenran / déeran"]]
                  }
                 {:label "bayso-VConj3AffPerfComp2-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1220,6 +1291,7 @@
                          [:Plural :Person3 :Common "déenwa"]]
                  }
                 {:label "bayso-VConj3AffPerfPast-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1237,6 +1309,7 @@
                          [:Plural :Person3 :Common "déenre(n) / déeren"]]
                  }
                 {:label "bayso-VConj3AffPerfSimple-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1254,6 +1327,7 @@
                          [:Plural :Person3 :Common "déen"]]
                  }
                 {:label "bayso-VConj3NegDubPast-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1271,6 +1345,7 @@
                          [:Plural :Person3 :Common "lákko díigiran"]]
                  }
                 {:label "bayso-VConj3NegFut1-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1288,6 +1363,7 @@
                          [:Plural :Person3 :Common "lákko deerán"]]
                  }
                 {:label "bayso-VConj3NegFutProx1-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1305,6 +1381,7 @@
                          [:Plural :Person3 :Common "lákko díingiran"]]
                  }
                 {:label "bayso-VConj3NegFutProx2-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1322,6 +1399,7 @@
                          [:Plural :Person3 :Common "lákko díianaran"]]
                  }
                 {:label "bayso-VConj3NegImperfPast-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1339,6 +1417,7 @@
                          [:Plural :Person3 :Common "lákko díinaren"]]
                  }
                 {:label "bayso-VConj3NegImperfPres-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1356,6 +1435,7 @@
                          [:Plural :Person3 :Common "lákko diáagiran"]]
                  }
                 {:label "bayso-VConj3NegImprtv-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1370,6 +1450,7 @@
                          [:Plural "aro´ deetén"]]
                  }
                 {:label "bayso-VConj3NegPerfComp1-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1387,6 +1468,7 @@
                          [:Plural :Person3 :Common "lákko déenran / lá déeran"]]
                  }
                 {:label "bayso-VConj3NegPerfPast-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1404,6 +1486,7 @@
                          [:Plural :Person3 :Common "lákko déenre(n) / lá déeren"]]
                  }
                 {:label "bayso-VConj3NegPerfSimple-dee"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation3,
@@ -1421,6 +1504,7 @@
                          [:Plural :Person3 :Common "lákko déen"]]
                  }
                 {:label "bayso-VConj4AffDubPast-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1438,6 +1522,7 @@
                          [:Plural :Person3 :Common "koráigiran"]]
                  }
                 {:label "bayso-VConj4AffFut1-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1455,6 +1540,7 @@
                          [:Plural :Person3 :Common "koráran"]]
                  }
                 {:label "bayso-VConj4AffFut2-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1472,6 +1558,7 @@
                          [:Plural :Person3 :Common "koratánwa"]]
                  }
                 {:label "bayso-VConj4AffFut3-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1489,6 +1576,7 @@
                          [:Plural :Person3 :Common "koráinaran"]]
                  }
                 {:label "bayso-VConj4AffFutProx1-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1506,6 +1594,7 @@
                          [:Plural :Person3 :Common "koráingiran"]]
                  }
                 {:label "bayso-VConj4AffFutProx2-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1523,6 +1612,7 @@
                          [:Plural :Person3 :Common "koráinaran"]]
                  }
                 {:label "bayso-VConj4AffImperfPast-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1540,6 +1630,7 @@
                          [:Plural :Person3 :Common "koráinaren"]]
                  }
                 {:label "bayso-VConj4AffImperfPres-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1557,6 +1648,7 @@
                          [:Plural :Person3 :Common "koratáagiran"]]
                  }
                 {:label "bayso-VConj4AffImperfSimple-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1574,6 +1666,7 @@
                          [:Plural :Person3 :Common "koratán"]]
                  }
                 {:label "bayso-VConj4AffImprtv-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1588,6 +1681,7 @@
                          [:Plural "koráen"]]
                  }
                 {:label "bayso-VConj4AffJussive-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1602,6 +1696,7 @@
                          [:Plural :Common "há korate(e)n"]]
                  }
                 {:label "bayso-VConj4AffPerfComp1-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1619,6 +1714,7 @@
                          [:Plural :Person3 :Common "koraténran / koratéran"]]
                  }
                 {:label "bayso-VConj4AffPerfComp2-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1636,6 +1732,7 @@
                          [:Plural :Person3 :Common "koraténwa"]]
                  }
                 {:label "bayso-VConj4AffPerfPast-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1653,6 +1750,7 @@
                          [:Plural :Person3 :Common "koraténre(n)"]]
                  }
                 {:label "bayso-VConj4AffPerfSimple-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1670,6 +1768,7 @@
                          [:Plural :Person3 :Common "koratén"]]
                  }
                 {:label "bayso-VConj4NegDubPast-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1687,6 +1786,7 @@
                          [:Plural :Person3 :Common "lákko koráigiran"]]
                  }
                 {:label "bayso-VConj4NegFut1-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1704,6 +1804,7 @@
                          [:Plural :Person3 :Common "lákko koráran"]]
                  }
                 {:label "bayso-VConj4NegFutProx1-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1721,6 +1822,7 @@
                          [:Plural :Person3 :Common "lákko koráingiran"]]
                  }
                 {:label "bayso-VConj4NegFutProx2-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1738,6 +1840,7 @@
                          [:Plural :Person3 :Common "lákko koráinaran"]]
                  }
                 {:label "bayso-VConj4NegImperfPast-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1755,6 +1858,7 @@
                          [:Plural :Person3 :Common "lákko koráinaren"]]
                  }
                 {:label "bayso-VConj4NegImperfPres-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1772,6 +1876,7 @@
                          [:Plural :Person3 :Common "lákko koratáagiran"]]
                  }
                 {:label "bayso-VConj4NegImperfSimple-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1789,6 +1894,7 @@
                          [:Plural :Person3 :Common "lákko koratán"]]
                  }
                 {:label "bayso-VConj4NegImprtv-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1803,6 +1909,7 @@
                          [:Plural "aro´ korattén"]]
                  }
                 {:label "bayso-VConj4NegJussive-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1816,6 +1923,7 @@
                          ["aro´ koranno´"]]
                  }
                 {:label "bayso-VConj4NegPerfComp1-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1833,6 +1941,7 @@
                          [:Plural :Person3 :Common "lákko koraténran / lá koratéran"]]
                  }
                 {:label "bayso-VConj4NegPerfPast-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1850,6 +1959,7 @@
                          [:Plural :Person3 :Common "lákko koraténre(n)"]]
                  }
                 {:label "bayso-VConj4NegPerfSimple-kor"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :conjSubClass :Conjugation4,
@@ -1867,6 +1977,7 @@
                          [:Plural :Person3 :Common "lákko koratén"]]
                  }
                 {:label "bayso-VStems"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :TnsAspModStem
                           :lexeme :dub,
                           :pos :Verb,
@@ -1879,6 +1990,7 @@
                          [:Present :Imperfect "dubaa-"]]
                  }
                 {:label "bayso-PIndep"
+                 :note "H78p.H79p."
                  :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :Independent}
                  :terms [[:case :number :person :gender :token],
@@ -1900,6 +2012,7 @@
                          [:Subject :Plural :Person3 :Common "ísin"]]
                  }
                 {:label "bayso-VAffPastCopula"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :CopulaSuff
                           :lexeme :COPULA,
                           :conjClass :Prefix,
@@ -1917,6 +2030,7 @@
                          [:Plural :Person3 :Common "-yen"]]
                  }
                 {:label "bayso-VAffPresentCopula"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :CopulaSuff
                           :lexeme :COPULA,
                           :conjClass :Prefix,
@@ -1934,6 +2048,7 @@
                          [:Plural :Person3 :Common "-yan"]]
                  }
                 {:label "bayso-VNegPresentCopula"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :CopulaNegSuff
                           :lexeme :COPULA,
                           :conjClass :Prefix,
@@ -1951,6 +2066,7 @@
                          [:Plural :Person3 :Common "-yan"]]
                  }
                 {:label "bayso-VPersAspSuff"
+                 :note "H78p.H79p."
                  :common {:vmorphClass :PersSuff
                           :pos :Verb,
                           }
